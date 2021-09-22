@@ -1,10 +1,9 @@
 {% for item in site.data.navigation %}
-{% capture true_link %}{% link {{ item.link }} %}{% endcapture %}
 <li class="nav-item">
-  {% if page.url == true_link %}
-  <a class="nav-link active" aria-current="page" href="{{ true_link }}">{{ item.name }}</a>
+  {% if page.url == item.link %}
+  <a class="nav-link active" aria-current="page" href="{{ item.link }}">{{ item.name }}</a>
   {% else %}
-  <a class="nav-link" href="{{ true_link }}">{{ item.name }}</a>
+  <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
   {% endif %}
 </li>
 {% endfor %}
