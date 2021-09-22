@@ -1,0 +1,15 @@
+---
+title: Awards
+layout: default
+---
+
+<h1>Awards and Recognition</h1>
+<hr>
+
+{% for award in site.data.awards %}
+<h5 class="text-success">{{ award.name }}</h5>
+<h6 class="text-muted">Held {{ award.held }}.</h6>
+<p>
+Value: <strong>{{ award.value }}</strong>, received from {{ award.from }} by {{ award.by }}.
+</p>
+{% endfor %}

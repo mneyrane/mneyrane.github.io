@@ -1,0 +1,13 @@
+<span class="fs-3"> 
+  {% for item in site.data.media_icons %}
+  {% if item.enabled == true %}
+  <a class="text-decoration-none" href="{% if item.local == true %}{% link {{ item.link }} %}{% else %}{{ item.link }}{% endif %}">
+    <i class="{{ item.i_class }}" role="img" aria-label="{{ item.aria_label }}"></i>
+  </a> 
+  {% else %}
+  <span class="text-decoration-none link-secondary"> 
+    <i class="{{ item.i_class }}" role="img" aria-label="{{ item.aria_label }}"></i> 
+  </span> 
+  {% endif %}
+  {% endfor %}
+</span>

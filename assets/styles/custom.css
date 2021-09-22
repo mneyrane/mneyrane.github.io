@@ -1,0 +1,9 @@
+/* background image */
+
+.bg-image {
+    background-attachment: scroll;
+    background-position: center 0%;
+    background-repeat: repeat-x;
+    background-size: 1920px auto;
+    height: 160px;
+}

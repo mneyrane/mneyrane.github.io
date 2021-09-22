@@ -1,0 +1,20 @@
+- name : Email
+  enabled : true
+  local : false
+  i_class : bi-envelope-fill
+  aria_label : Email
+  link : mailto:contact@mneyrane.com
+
+- name : GitHub
+  enabled : true
+  local : false
+  i_class : bi-github
+  aria_label : GitHub
+  link : https://github.com/mneyrane
+
+- name : LinkedIn
+  enabled : false
+  local : false
+  i_class : bi-linkedin
+  aria_label : LinkedIn
+  link : ~

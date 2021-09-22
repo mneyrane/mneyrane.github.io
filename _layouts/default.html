@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}Maksym Neyra-Nesterenko</title>
+    <!-- bootstrap custom theme -->
+    <link rel="stylesheet" href="{% link assets/styles/bootstrap.min.css %}">
+    <!-- custom CSS sheet -->
+    <link rel="stylesheet" href="{% link assets/styles/custom.css %}">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="icon" href="{% link assets/icons/favicon.ico %}">
+    <!-- bootstrap javascript for dropdowns, etc. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary border-bottom">
+      <div class="container px-5">
+        <span class="navbar-brand mb-0 h1">Maksym Neyra-Nesterenko</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-0">
+            {% include navbar_items.html %}
+         </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg-image overflow-hidden" style="background-image: url({% link assets/images/background.jpg %});"></div>
+
+    <main class="flex-fill bg-secondary">
+      <div class="container-fluid py-3">
+        <div class="container p-5 my-4 shadow rounded text-light bg-primary overflow-auto" id="content">
+          {{ content }}
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-primary">
+      <div class="container-fluid">
+        <div class="container text-center text-light small" id="footer">
+          <div class="row py-3">
+            <div class="col-md-4">
+              <span>
+                Website last updated on {{ site.time | date_to_long_string: "ordinal", "US" }}.<br>
+                Bootstrap theme: <a href="https://bootswatch.com/sandstone/">Sandstone</a>.
+                Powered by <a href="https://jekyllrb.com/">Jekyll</a>.
+              </span>
+            </div>
+            <div class="col-md-4">
+              <span><br>Copyright &copy; 2021 Maksym Neyra-Nesterenko.</span>
+            </div>
+            <div class="col-md-4">
+              {% include media_icons.html %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
