@@ -1,5 +1,7 @@
 include: [_pages]
 
+exclude: [LICENSE, README.md, assets/icons/favicon_io.zip, assets/icons/about.txt]
+
 collections:
     pages:
         permalink: /:title/
