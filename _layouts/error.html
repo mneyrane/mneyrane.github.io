@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page not found</title>
+    <!-- bootstrap custom theme -->
+    <link rel="stylesheet" href="{% link assets/styles/bootstrap.min.css %}">
+    <!-- icons -->
+    <link rel="icon" href="{% link assets/icons/favicon.ico %}">
+    <!-- bootstrap javascript for dropdowns, etc. -->
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <main class="flex-fill bg-secondary">
+      <div class="container p-5 my-5 text-light text-center bg-primary" id="content">
+        {{ content }}
+      </div>
+    </main>
+  </body>
+</html>
