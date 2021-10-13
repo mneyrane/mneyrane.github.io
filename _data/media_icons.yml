@@ -13,8 +13,8 @@
   link : https://github.com/mneyrane
 
 - name : LinkedIn
-  enabled : false
+  enabled : true
   local : false
   i_class : bi-linkedin
   aria_label : LinkedIn
-  link : ~
+  link : https://www.linkedin.com/in/maksym-neyra-nesterenko-401b0a222
