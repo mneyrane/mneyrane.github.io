@@ -5,10 +5,17 @@ title: Awards
 <h1>Awards and Recognition</h1>
 <hr>
 
-{% for award in site.data.awards %}
-<h5 class="text-success">{{ award.name }}</h5>
-<h6 class="text-muted">Held {{ award.held }}.</h6>
 <p>
-Value: <strong>{{ award.value }}</strong>, received from {{ award.from }} by {{ award.by }}.
+Below is a list of major scholarships and awards I received in the past few years.
 </p>
-{% endfor %}
+
+<ul>
+  {% for award in site.data.awards %}
+  <li>
+  <h6><strong>{{ award.name }}</strong> <span class="text-muted">({{ award.held }})</span></h6>
+  <p>
+  Value: <strong class="text-success">{{ award.value }}</strong>, received from {{ award.from }} by {{ award.by }}.
+  </p>
+  </li>
+  {% endfor %}
+</ul>
