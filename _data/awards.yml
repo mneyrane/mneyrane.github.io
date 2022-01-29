@@ -1,5 +1,12 @@
+- name : "Peter Borwein Memorial Graduate Scholarship"
+  held : "Jan 2022-Apr 2022"
+  value : "$1500"
+  from : "Simon Fraser University"
+  by : "nomination"
+  link : ~
+
 - name : "NSERC Canada Graduate Scholarships - Master's"
-  held : "Jan-Dec 2021"
+  held : "May 2021-Apr 2022"
   value : "$17500"
   from : "NSERC"
   by : "application"
