@@ -1,0 +1,19 @@
+- location : "Simon Fraser University"
+  period : "Jan 2022-now"
+  courses : "Applied Calculus Workshop"
+  now : true
+
+- location : "Simon Fraser University"
+  period : "Jan-Apr 2021"
+  courses : "Vector Calculus and Applied Calculus Workshop"
+  now : false
+
+- location : "Simon Fraser University"
+  period : "Sep-Dec 2020"
+  courses : "Algebra Workshop"
+  now : false
+
+- location : "Simon Fraser University"
+  period : "Sep-Dec 2018, Jan-Apr 2018"
+  courses : "Applied Calculus Workshop"
+  now : false

@@ -15,8 +15,7 @@ A list of my past teaching activities.
 Responsibilities include: mark assignments, quizzes, exams, invigilate exams, office hours, tutorials, and various other duties.
 </p>
 <ul>
-  <li><span class="text-success">Simon Fraser University</span> - Algebra Workshop and Mathematics of Data Science <span class="text-warning">(Jan 2022-now)</span></li>
-  <li><span class="text-success">Simon Fraser University</span> - Vector Calculus and Applied Calculus Workshop <span class="text-muted">(Jan-Apr 2021)</span></li>
-  <li><span class="text-success">Simon Fraser University</span> - Algebra Workshop <span class="text-muted">(Sep-Dec 2020)</span></li>
-  <li><span class="text-success">Simon Fraser University</span> - Applied Calculus Workshop <span class="text-muted">(Sep-Dec 2018, Jan-Apr 2018)</span></li>
+  {% for role in site.data.teaching_ta %}
+  <li><span class="text-info">{{ role.location }}</span> - {{ role.courses }} <span class={% if role.now == true %}"text-warning"{% else %}"text-muted"{% endif %}>({{ role.period }})</span></li>
+  {% endfor %}
 </ul>
