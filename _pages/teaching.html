@@ -6,16 +6,25 @@ title: Teaching
 <hr>
 
 <p>
-A list of my past teaching activities.
+A list of my past teaching activities, sorted by date with most recent at the top.
 </p>
 
-<h4><strong>Teaching assistantships</strong></h4>
+<h4 class="fw-bold">Teaching assistantships</h4>
 
 <p>
-Responsibilities include: mark assignments, quizzes, exams, invigilate exams, office hours, tutorials, and various other duties.
+Responsibilities: mark assignments, quizzes, exams, invigilate exams, office hours, tutorials, create solution rubrics, and various other duties.
 </p>
+
+<p><strong>Simon Fraser University (up to 2022)</strong>, during my master's and undergraduate program:</p>
+
 <ul>
   {% for role in site.data.teaching_ta %}
-  <li><span class="text-info">{{ role.location }}</span> - {{ role.courses }} <span class={% if role.now == true %}"text-warning"{% else %}"text-muted"{% endif %}>({{ role.period }})</span></li>
+  <li>
+    <p>
+    {{ role.courses }} <span class={% if role.now == true %}"text-info"{% else %}"text-muted"{% endif %}>({{ role.period }})</span>
+    </p>
+  </li>
   {% endfor %}
 </ul>
+
+

@@ -6,91 +6,65 @@ title: Research
 <hr>
 
 <p>
-My primary research interest is in the mathematics of machine learning.
-The origins of this interest came about when I first heard the major milestone achieved by Google's DeepMind and their Go program "AlphaGo".
-This was back in 2016, midway through undergrad and during a time where I have not yet heard the term "machine learning".
-Since then, I have not ceased to be fascinated or curious about machine learning and understanding its mathematics.
+<strong class="text-warning">Note: my master's program is still in progress, so expect this page to update.</strong>
 </p>
 
 
-<h3>Overview</h3>
+<h5 class="fw-bold">Main interests</h5>
+
+<div class="row">
+  <div class="col">
+    <ul>
+      <li>deep learning</li>
+      <li>continuous optimization</li>
+    </ul>
+  </div>
+  <div class="col">
+    <ul>
+      <li>optimal transport</li>
+      <li>compressed sensing</li>
+    </ul>
+  </div>
+  <div class="col">
+    <ul>
+      <li>numerical analysis</li>
+      <li>partial differential equations</li>
+    </ul>
+  </div>
+</div>
+
+
+<h5 class="fw-bold text-info">Current research</h5>
 
 <p>
-My MSc research topic is on <em>deep learning for compressive imaging</em>.
-The research focuses on constructing deep neural networks that are accurate, stable, and efficient for image reconstruction on gradient-sparse images. This takes inspiration and builds on the work in <a href="https://arxiv.org/abs/2101.08286">this paper</a> authored by Antun, Colbrook and Hansen, some of whom collaborate with my supervisor.
-My research touches upon several areas of mathematics, including convex optimization, compressed sensing, and deep learning.
+My ongoing master's research is about developing <strong>stable, accurate, and efficient deep neural networks for compressive imaging</strong>.
 </p>
 
 <p>
-Below you can find a list of my current and past research activities.
-<em class="text-info">Note that my MSc program is still in progress. This page will be updated over this year as we progress towards a publication and as I write my thesis.</em>
+To motivate this, in the past decade, deep learning has taken the world by storm, with unforeseen success in a myriad of (formerly) challenging applications, like image classification and natural language processing. Indicating great potential, there has been growing interest in applying deep learning to solve compressive imaging problems. Compressive imaging encompasses a wide range of scientific tasks, such as medical imaging, seismic imaging and electron microscopy to name a few. Up until recently, model-based methods served as state-of-the-art tools to tackle these problems.
+Data-driven methods, like deep learning, have been found to empirically outperform model-based methods with superior accuracy on data, but suffer from hallucinations, instability, and poor generalization performance. This raises security and safety concerns for using deep learning in critical tasks like medical imaging. 
 </p>
 
-<h3>Publications</h3>
+<p>
+A natural question to ask is: <strong>can we compute deep neural networks for compressive imaging with state-of-the-art performance guarantees?</strong>
+</p>
 
-<h5><strong class="text-info">Submitted work</strong></h5>
+<p>
+In collaboration with my supervisor <a href="https://benadcock.org/">Ben Adcock</a>, our research aims to address this question, taking inspiration from and building on <a href="https://arxiv.org/abs/2101.08286">FIRENETs</a>, a closely related work authored by Antun, Colbrook and Hansen. Our work touches upon several areas of mathematics, including convex optimization, compressed sensing, random matrix theory, and machine learning.
+</p>
 
-<ul>
-  <li>
-  <p>
-  M. Neyra-Nesterenko and B. Adcock
-  <br> 
-  <em>Stable, accurate and efficient deep neural networks for inverse problems with analysis sparse models</em>
-  <br>
-  Preprint: <a href="https://arxiv.org/abs/2203.00804">arXiv:2203.00804</a>
-  </p>
-  </li>
-</ul>
 
-<!--
-<h5><strong>Journal articles</strong></h5>
 
-IN PROGRESS
--->
+<h2 class="pt-3 fw-bold">Publications</h2>
 
-<h3>Presentations</h3>
+{% include publication_section.html title="Submitted work" type="submitted" %}
 
-<h5><strong class="text-info">Scheduled presentations</strong></h5>
+{% include publication_section.html title="Conference abstracts" type="conference abstract" %}
 
-<ul>
-  <li>
-    <p>
-    <em>Stable, Accurate and Efficient Deep Neural Networks for Gradient Sparse Imaging</em><br>
-    SIAM Conference on Imaging Science (IS22) <a href="https://www.siam.org/conferences/cm/conference/is22">(link)</a>
-    <span class="text-muted">(scheduled Mar 22, 2022)</span>
-    </p>
-  </li>
-</ul> 
 
-<h5><strong>Contributed talks</strong></h5>
 
-<ul>
-  <li>
-    <p>
-    <em>Stable, accurate and efficient deep neural networks for inverse problems with analysis sparse models</em><br>
-    SFU Operations Research Seminars <a href="https://www.sfu.ca/math/research/operations-research/operations-research-seminars.html">(link)</a>
-    <span class="text-muted">(Feb 14, 2022)</span>
-    </p>
-  </li>
-  <li>
-    <p>
-    <em>Provably Accurate, Stable and Efficient Deep Neural Networks for Compressive Imaging</em><br>
-    International Conference on Computational Harmonic Analysis (ICCHA) <a href="https://www.univie.ac.at/projektservice-mathematik/e/index.php?event=ICCHA2021online">(link)</a>
-    <span class="text-muted">(Sep 17, 2021)</span>
-    </p>
-  </li>
-  <li>
-    <p>
-    <em>Provably Accurate and Stable Deep Neural Networks for Imaging</em><br>
-    CAIMS Annual Meeting <a href="https://uwaterloo.ca/canadian-applied-industrial-math-society-annual-meeting-2021/">(link)</a>
-    <span class="text-muted">(Jun 23, 2021)</span>
-    </p>
-  </li>
-  <li>
-    <p>
-    <em>Provably Accurate and Stable Deep Neural Networks for Imaging</em><br>
-    Ottawa Mathematics Conference (OMC) <a href="https://sites.google.com/site/ottawamath2019/home">(link)</a>
-    <span class="text-muted">(May 28, 2021)</span>
-    </p>
-  </li>
-</ul>
+<h2 class="pt-3 fw-bold">Presentations</h2>
+
+{% include presentation_section.html title="Scheduled talks" scheduled=true %}
+
+{% include presentation_section.html title="Past talks" %}

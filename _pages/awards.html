@@ -6,16 +6,9 @@ title: Awards
 <hr>
 
 <p>
-Below is a list of major scholarships and awards I have received.
+Below is a list of major scholarships and awards I have received, sorted by date with most recent at the top.
 </p>
 
-<ul>
-  {% for award in site.data.awards %}
-  <li>
-  <h6><strong>{{ award.name }}</strong> <span class="text-muted">({{ award.held }})</span></h6>
-  <p>
-  Value: <strong class="text-success">{{ award.value }}</strong>, received from {{ award.from }} by {{ award.by }}.
-  </p>
-  </li>
-  {% endfor %}
-</ul>
+{% include award_section.html during="MSc" title="Master's awards" description="Held during my MSc in Applied Mathematics at Simon Fraser University." %}
+
+{% include award_section.html during="BSc" title="Undergraduate awards" description="Held during my BSc in Mathematics Honours at Simon Fraser University."%}

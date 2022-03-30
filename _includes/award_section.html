@@ -1,0 +1,16 @@
+<h5 class="fw-bold">{{ include.title }}</h5>
+
+<p>{{ include.description }}</p>
+
+<ul>
+  {% for award in site.data.awards %}
+  {% if award.during == include.during %}
+  <li>
+    <p>
+    <em>{{ award.name }}</em><br>
+    Value: <strong class="text-success">{{ award.value }}</strong>.  Received from {{ award.from }} by {{ award.by }}. <span class="text-muted">(held {{ award.held }})</span>
+    </p>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>

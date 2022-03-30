@@ -1,19 +1,19 @@
 - location : "Simon Fraser University"
-  period : "Jan 2022-now"
-  courses : "Applied Calculus Workshop"
+  period : "Spring 2022"
+  courses : "Applied Calculus Workshop, Mathematics of Data Science (MATH475)"
   now : true
 
 - location : "Simon Fraser University"
-  period : "Jan-Apr 2021"
-  courses : "Vector Calculus and Applied Calculus Workshop"
+  period : "Spring 2021"
+  courses : "Vector Calculus (MATH252) and Applied Calculus Workshop"
   now : false
 
 - location : "Simon Fraser University"
-  period : "Sep-Dec 2020"
+  period : "Fall 2020"
   courses : "Algebra Workshop"
   now : false
 
 - location : "Simon Fraser University"
-  period : "Sep-Dec 2018, Jan-Apr 2018"
+  period : "Fall 2018, Spring 2018"
   courses : "Applied Calculus Workshop"
   now : false

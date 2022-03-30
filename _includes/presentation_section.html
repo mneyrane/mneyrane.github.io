@@ -1,0 +1,18 @@
+{% if include.scheduled == true %}
+<h5 class="fw-bold text-info">{{ include.title }}</h5>
+{% else %}
+<h5 class="fw-bold">{{ include.title }}</h5>
+{% endif %}
+
+<ul>
+  {% for talk in site.data.presentations %}
+  {% if talk.scheduled == include.scheduled %}
+  <li>
+    <p>
+      <em>{{ talk.title }}</em><br>
+      {{ talk.event }} <a href="{{ talk.link }}">[link]</a> - {{ talk.type }} <span class="text-muted">({{ talk.loc }} - {{ talk.date }})</span>
+    </p>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>

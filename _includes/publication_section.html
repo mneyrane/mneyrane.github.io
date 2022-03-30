@@ -1,0 +1,19 @@
+{% if include.type == "submitted" %}
+<h5 class="fw-bold text-info">{{ include.title }}</h5>
+{% else %}
+<h5 class="fw-bold">{{ include.title }}</h5>
+{% endif %}
+
+<ul>
+  {% for item in site.data.publications %}
+  {% if item.type == include.type %}
+  <li>
+    <p>
+      {{ item.authors }}<br>
+      <em>{{ item.title }}</em><br>
+      {{ item.publisher }} {{ item.description }} <a href="{{ item.link }}">{{ item.linkname }}</a> <span class="text-muted">({{ item.date }})</span>
+    </p>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
