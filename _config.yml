@@ -2,6 +2,8 @@ include: [_pages]
 
 exclude: [LICENSE, README.md, assets/icons/favicon_io.zip, assets/icons/about.txt]
 
+timezone: Canada/Pacific
+
 collections:
     pages:
         permalink: /:title/
