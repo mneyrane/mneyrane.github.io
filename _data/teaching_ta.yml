@@ -1,7 +1,12 @@
 - location : "Simon Fraser University"
+  period : "Summer 2022"
+  courses : "Ordinary Differential Equations (MATH260)"
+  now : true
+
+- location : "Simon Fraser University"
   period : "Spring 2022"
   courses : "Applied Calculus Workshop, Mathematics of Data Science (MATH475)"
-  now : true
+  now : false
 
 - location : "Simon Fraser University"
   period : "Spring 2021"

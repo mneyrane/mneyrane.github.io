@@ -2,9 +2,8 @@
   event : "SIAM Pacific Northwest Conference"
   loc : "Washington State University, Vancouver, WA, US"
   type : "minisymposium talk"
-  date : "scheduled for May 2022"
+  date : "May 21, 2022"
   link : "https://sites.google.com/view/siampnw21/home"
-  scheduled : true
 
 - title: "Stable, Accurate and Efficient Deep Neural Networks for Gradient Sparse Imaging"
   event : "SIAM Conference on Imaging Science (IS22)"
