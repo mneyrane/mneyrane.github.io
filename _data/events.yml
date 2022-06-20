@@ -10,11 +10,11 @@
   link : ~
   date : "May 20-22, 2022"
 
-- name : "The Fields Institute - Focus Program on Data Science, Approximation Theory, and Harmonic Analysis"
-  type : "upcoming"
-  loc : "virtual"
-  link : "http://www.fields.utoronto.ca/activities/21-22/data"
-  date : "May 9-Jun 10, 2022"
+#- name : "The Fields Institute - Focus Program on Data Science, Approximation Theory, and Harmonic Analysis"
+#  type : "upcoming"
+#  loc : "virtual"
+#  link : "http://www.fields.utoronto.ca/activities/21-22/data"
+#  date : "May 9-Jun 10, 2022"
 
 - name : "SIAM Conference on Imaging Science (IS22)"
   type : "past"
