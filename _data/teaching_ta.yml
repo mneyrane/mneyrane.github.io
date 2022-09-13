@@ -1,7 +1,12 @@
 - location : "Simon Fraser University"
+  period : "Fall 2022"
+  courses : "Continuous Optimization (MATH309) and Algebra Workshop"
+  now : true
+
+- location : "Simon Fraser University"
   period : "Summer 2022"
   courses : "Ordinary Differential Equations (MATH260)"
-  now : true
+  now : false
 
 - location : "Simon Fraser University"
   period : "Spring 2022"
