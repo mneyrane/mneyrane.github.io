@@ -57,14 +57,43 @@ In collaboration with my supervisor <a href="https://benadcock.org/">Ben Adcock<
 
 <h2 class="pt-3 fw-bold">Publications</h2>
 
-{% include publication_section.html title="Submitted work" type="submitted" %}
+{% assign pub1 = "submitted" %}
+{% assign pub2 = "journal paper" %}
+{% assign pub3 = "conference abstract" %}
 
-{% include publication_section.html title="Conference abstracts" type="conference abstract" %}
+{% for item in site.data.publications %}
+  {% if item.type == pub1 %}
+    {% include publication_section.html title="Submitted work" type=pub1 %}
+    {% break %}
+  {% endif %}
+{% endfor %}
 
+{% for item in site.data.publications %}
+  {% if item.type == pub2 %}
+    {% include publication_section.html title="Journal papers" type=pub2 %}
+    {% break %}
+  {% endif %}
+{% endfor %}
 
+{% for item in site.data.publications %}
+  {% if item.type == pub3 %}
+    {% include publication_section.html title="Conference abstracts" type=pub3 %}
+    {% break %}
+  {% endif %}
+{% endfor %}
 
 <h2 class="pt-3 fw-bold">Presentations</h2>
 
-<!--{% include presentation_section.html title="Scheduled talks" scheduled=true %}-->
+{% for item in site.data.presentations %}
+  {% if item.scheduled %}
+    {% include presentation_section.html title="Scheduled talks" scheduled=true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
 
-{% include presentation_section.html title="Past talks" %}
+{% for item in site.data.presentations %}
+  {% if item.scheduled == nil %}
+    {% include presentation_section.html title="Past talks" %}
+    {% break %}
+  {% endif %}
+{% endfor %}

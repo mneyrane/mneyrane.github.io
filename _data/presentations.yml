@@ -1,4 +1,11 @@
-- title: "Stable, accurate and efficient deep neural networks for reconstruction of gradient-sparse images"
+- title: "Restart schemes: a powerful parameter-free acceleration scheme for first-order methods"
+  event : "SFU Applied Math Seminar"
+  loc : "Simon Fraser University, Burnaby, BC, CA"
+  type : "seminar presentation"
+  date : "Nov 23, 2022"
+  link : "https://www.sfu.ca/math/research/applied-mathematics.html"
+
+- title : "Stable, accurate and efficient deep neural networks for reconstruction of gradient-sparse images"
   event : "SIAM Pacific Northwest Conference"
   loc : "Washington State University, Vancouver, WA, US"
   type : "minisymposium talk"
