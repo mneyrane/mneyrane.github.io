@@ -9,6 +9,19 @@ title: Events
 A list of upcoming and past events, sorted by date. These include workshops and competitions I participated in, and conferences I attended.
 </p>
 
-<!--{% include events_section.html title="Upcoming events" type="upcoming" %}-->
+{% assign ev1 = "upcoming" %}
+{% assign ev2 = "past" %}
 
-{% include events_section.html title="Past events" type="past" %}
+{% for item in site.data.events %}
+  {% if item.type == ev1 %}
+    {% include events_section.html title="Upcoming events" type=ev1 %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% for item in site.data.events %}
+  {% if item.type == ev2 %}
+    {% include events_section.html title="Past events" type=ev2 %}
+    {% break %}
+  {% endif %}
+{% endfor %}

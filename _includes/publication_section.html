@@ -9,21 +9,27 @@
   {% if item.type == include.type %}
   <li>
     <p>
+    {% if item.type == "journal paper" %}
+      {{ item.authors }}<br>
+      <i>{{ item.title }}</i><br>
+      {{ item.citation }} <span class="text-muted">({{ item.date }})</span> <a href="{{ item.link }}">[link]</a>
+      {% if item.preprint %}
+      <br>
+      {% include preprint_line.html %} 
+      {% endif %}
+    {% elsif item.type == "conference abstract" %}
       {{ item.authors }}<br>
       {{ item.title }}<br>
-      {{ item.citation }} <span class="text-muted">({{ item.date }})</span> <a href="{{ item.link }}">[link]</a>
-      {% if item.preprint and item.citation %}</br>{% endif %}
+      In: <i>{{ item.in }}</i>, {{ item.citation }} <span class="text-muted">({{ item.date }})</span> <a href="{{ item.link }}">[link]</a>
       {% if item.preprint %}
-      Preprint:
-      <a href="{{ item.preprint }}">
-        {% assign preprint_head = item.preprint | slice: 0, 18 %}
-        {% if preprint_head == "https://arxiv.org/" %} 
-        arXiv:{{ item.preprint | split: "/" | last }}
-        {% else %}
-        <span class="text-alert">INVALID LINK</span>
-        {% endif %}
-      </a>
+      <br>
+      {% include preprint_line.html %}
       {% endif %}
+    {% elsif item.type == "submitted" %}
+      {{ item.authors }}<br>
+      <i>{{ item.title }}</i><br>
+      {% include preprint_line.html %}
+   {% endif %}
     </p>
   </li>
   {% endif %}

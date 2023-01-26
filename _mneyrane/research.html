@@ -5,52 +5,51 @@ title: Research
 <h1>Research</h1>
 <hr>
 
-<p>
-<strong class="text-warning">Note: my master's program is still in progress, so expect this page to update.</strong>
-</p>
-
-
-<h5 class="fw-bold">Main interests</h5>
+<h2 class="fw-bold">Main interests</h2>
 
 <div class="row">
   <div class="col">
     <ul>
       <li>deep learning</li>
-      <li>continuous optimization</li>
-    </ul>
-  </div>
-  <div class="col">
-    <ul>
       <li>optimal transport</li>
-      <li>compressed sensing</li>
     </ul>
   </div>
   <div class="col">
     <ul>
+      <li>continuous optimization</li>
       <li>numerical analysis</li>
+    </ul>
+  </div>
+  <div class="col">
+    <ul>
+      <li>compressed sensing</li>
       <li>partial differential equations</li>
     </ul>
+  </div>
+  <div class="col">
+    <ul>
+      <li>game theory</li>
+      <li>data science</li>
   </div>
 </div>
 
 
-<h5 class="fw-bold text-info">Current research</h5>
+<h2 class="fw-bold">Master's research</h2>
 
-<p>
-My ongoing master's research is about developing <strong>stable, accurate, and efficient deep neural networks for compressive imaging</strong>.
+<h5 class="fw-bold">Deep neural networks for inverse problems in imaging</h5>
+
+<p> 
+In the past decade, deep learning has been incredibly successful in a myriad image processing applications. As a result, there has been growing interest in applying deep learning to solve inverse problems in imaging. Being able to tackle imaging problems is fundamental to the progress of science, engineering and medicine. Despite recent work indicating that deep learning performs better than state-of-the-art model-based methods for imaging, deep neural networks have significant issues in stability and generalization. This raises the key question: <strong>can we construct deep neural networks for inverse problems in imaging with state-of-the-art performance guarantees?</strong>
 </p>
 
 <p>
-To motivate this, in the past decade, deep learning has taken the world by storm, with unforeseen success in a myriad of (formerly) challenging applications, like image classification and natural language processing. Indicating great potential, there has been growing interest in applying deep learning to solve compressive imaging problems. Compressive imaging encompasses a wide range of scientific tasks, such as medical imaging, seismic imaging and electron microscopy to name a few. Up until recently, model-based methods served as state-of-the-art tools to tackle these problems.
-Data-driven methods, like deep learning, have been found to empirically outperform model-based methods with superior accuracy on data, but suffer from hallucinations, instability, and poor generalization performance. This raises security and safety concerns for using deep learning in critical tasks like medical imaging. 
-</p>
+My supervisor <a href="https://benadcock.org/">Ben Adcock</a> and I contribute to addressing the previous question, extending the work of <a href="https://doi.org/10.1073/pnas.2107151119">Matthew Colbrook, et al</a>. In a <a href="https://doi.org/10.1007/s43670-022-00043-5">paper</a>, we construct neural networks that achieve the same performance guarantees as state-of-the-art model-based methods to recover a class of analysis-sparse signals.
+In my master's thesis, recovery is instead shown for gradient-sparse signals.
+The neural network constructions are based on unrolling an optimization algorithm, which are made efficient by applying a <i>restart scheme</i> to accelerate the image reconstruction. This has led to interesting <a href="https://arxiv.org/abs/2301.02268">side work</a> with Ben Adcock and Matthew Colbrook to examine general restart schemes in optimization.
 
-<p>
-A natural question to ask is: <strong>can we compute deep neural networks for compressive imaging with state-of-the-art performance guarantees?</strong>
 </p>
-
 <p>
-In collaboration with my supervisor <a href="https://benadcock.org/">Ben Adcock</a>, our research aims to address this question, taking inspiration from and building on <a href="https://arxiv.org/abs/2101.08286">FIRENETs</a>, a closely related work authored by Antun, Colbrook and Hansen. Our work touches upon several areas of mathematics, including convex optimization, compressed sensing, random matrix theory, and machine learning.
+Our work brings together several areas of mathematics, including convex optimization, compressed sensing, random matrix theory and deep learning.
 </p>
 
 

@@ -1,7 +1,7 @@
 {% if include.type == "upcoming" %}
-<h5 class="fw-bold text-info">{{ include.title }}</h5>
+<h2 class="fw-bold text-info">{{ include.title }}</h2>
 {% else %}
-<h5 class="fw-bold">{{ include.title }}</h5>
+<h2 class="fw-bold">{{ include.title }}</h2>
 {% endif %}
 
 <ul>
@@ -10,7 +10,7 @@
   <li>
     <p>
       {{ item.name }}
-      {{ item.publisher }}  <a href="{{ item.link }}">[link]</a> <span class="text-muted">({{ item.loc}} - {{ item.date }})</span>
+      {{ item.publisher }} {% if item.link %}<a href="{{ item.link }}">[link]</a>{% endif %} <span class="text-muted">({{ item.loc}} - {{ item.date }})</span>
     </p>
   </li>
   {% endif %}
