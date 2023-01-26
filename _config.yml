@@ -5,7 +5,7 @@ exclude: [LICENSE, README.md, assets/icons/favicon_io.zip, assets/icons/about.tx
 timezone: Canada/Pacific
 
 collections:
-    pages:
+    mneyrane:
         permalink: /:title/
         output: true
 
