@@ -1,0 +1,15 @@
+<h2 class="fw-bold">{{ include.title }}</h2>
+
+<p>{{ include.description }}</p>
+
+<ul>
+  {% for item in site.data.recognition %}
+  <li>
+    <p>
+    <em>{{ item.name }}</em>
+    <a href={{ item.link }}>[link]</a>
+    - {{ item.short_desc }}
+    </p>
+  </li>
+  {% endfor %}
+</ul>
