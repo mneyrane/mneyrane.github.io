@@ -15,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   </head>
   <body class="d-flex flex-column min-vh-100">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary border-bottom">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
       <div class="container px-5">
         <span class="navbar-brand mb-0 h1">Maksym Neyra-Nesterenko</span>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,9 +31,9 @@
 
     <div class="bg-image overflow-hidden" style="background-image: url({% link assets/images/background.jpg %});"></div>
 
-    <main class="flex-fill bg-secondary">
+    <main class="flex-fill bg-dark">
       <div class="container-fluid py-3">
-        <div class="container p-5 my-4 shadow rounded text-light bg-primary overflow-auto" id="content">
+        <div class="container p-5 my-4 text-light overflow-auto" id="content">
           {{ content }}
         </div>
       </div>
