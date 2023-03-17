@@ -38,7 +38,15 @@
       {{ item.authors }}<br>
       <i>{{ item.title }}</i><br>
       {% include preprint_line.html %}
-   {% endif %}
+    {% elsif item.type == "thesis" %}
+      {{ item.authors }}<br>
+      <i>{{ item.title }}</i><br>
+      {{ item.citation }}
+      <span class="text-muted">({{ item.date }})</span>
+      <!-- update this when thesis is published to library -->
+      {% capture pdf_link %}../assets/media/{{ item.pdf }}{% endcapture %}
+      <a href="{{ pdf_link }}">[pdf]</a>
+    {% endif %}
     </p>
   </li>
   {% endif %}
