@@ -6,8 +6,11 @@ title: Events
 <hr>
 
 <p>
-A list of upcoming and past events, sorted by date. These include workshops and competitions I participated in, and conferences I attended.
+A list of upcoming and past events and activities. These include workshops and competitions I participated in, and conferences I attended, refereeing and more.
 </p>
+
+
+{% include referee_section.html %}
 
 {% assign ev1 = "upcoming" %}
 {% assign ev2 = "past" %}
@@ -25,3 +28,4 @@ A list of upcoming and past events, sorted by date. These include workshops and 
     {% break %}
   {% endif %}
 {% endfor %}
+

@@ -1,0 +1,11 @@
+<h2 class="fw-bold">Referee activity</h2>
+
+<ul>
+  {% for item in site.data.referee %}
+  <li>
+    <p>
+    {{ item.event }} <a href="{{ item.link }}">[link]</a> <span class="text-muted">({{ item.date }})</span>
+   </p>
+  </li>
+  {% endfor %}
+</ul>
