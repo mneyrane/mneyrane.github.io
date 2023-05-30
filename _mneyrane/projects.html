@@ -1,5 +1,7 @@
 ---
 title: Projects
+imheight: 192
+imwidth: 192
 ---
 
 <h1>Projects</h1>
@@ -10,17 +12,72 @@ Distinct from my academic work, here is a showcase of programming work and hobby
 <strong class="text-warning">More projects to come soon!</strong>
 </p>
 
-<h4><strong>OpenTabulate</strong></h4>
+<div class="clearfix">
 
-<h6>
-  <i>A Python data tabulation package developed during 2018-2020.</i>
-<a href="https://github.com/CSBP-CPSE/OpenTabulate">[project link]</a>
-</h6>
+<h5 class="fw-bold">San Francisco fire service analysis</h5>
+
+<img src="{% link assets/images/sanfranciscofire/SFFD.jpg %}" class="float-md-end ms-md-3 mb-1 border border-light" alt="San Francisco fire truck" width="{{ page.imwidth }}" height="{{ page.imheight }}">
 
 <p>
-In the later half of my undergrad, I worked as a data scientist for Statistics Canada for almost two years.
-Over that time, I contributed to the development of the <a href="https://www.statcan.gc.ca/eng/lode">Linkable Open Data Environment (LODE)</a>, an open source project for data processing, distribution and visualization.
-I wrote <code>opentabulate</code>, a Python package and a command line interface for tabulating data.
-The main purpose of OpenTabulate is to programmatically convert datasets (with a consistent schema) into CSV format with our own custom schema.
-OpenTabulate is used internally in my section to put together datasets, which are released <a href="https://www.statcan.gc.ca/eng/lode/databases">publicly</a> with an open data license.
+<span class="text-muted">(May 23, 2023)</span>
+Herein I independently explore and examine the <a href="https://datasf.org/opendata/">open data</a> of San Francisco's fire service calls, safety complaints and incidents.  
+
+To conduct data exploration, I extract and clean the fire service data to then analyze it by collecting descriptive statistics and examining trends via inferential statistics.
+This is done in Python using <code>pandas</code>, <code>geopandas</code>, <code>scipy.stats</code> and <code>seaborn</code>.
+The potential impact of this analysis is to gain insight on fire department usage, effectiveness, and to inform emergency decision-making to increase public safety.
 </p>
+
+<p>
+<span class="text-info fw-bold">Links:</span>
+<a href="{% link _projects/sanfranciscofire.html %}">[results]</a>
+<a href="https://github.com/mneyrane/SF-fire-analysis">[code]</a>
+</p>
+
+</div>
+
+<div class="clearfix">
+
+<h5 class="fw-bold">Strongly solving Quantik</h5>
+
+<img src="{% link assets/images/Quantik.png %}" class="float-md-end ms-md-3 mb-1 border border-light" alt="Quantik board game" width="{{ page.imwidth }}" height="{{ page.imheight }}">
+
+<p>
+<span class="text-muted">(Mar 22, 2023)</span>
+<a href="https://en.gigamic.com/game/quantik">Quantik</a> is a two-player adversarial abstract strategy game by Nouri Khalifa, published by Gigamic.
+The rules of the game are simple and reminiscent of Tic-tac-toe, but to contrast, Quantik has a larger state-space complexity and describing optimal play for either player is nontrivial.
+</p>
+
+<p>
+I wrote a strong solver for Quantik in C. 
+That is, assuming both players use minimax strategies, the solver determines which moves can force a win for the current player.
+Combining a pruned minimax search, a tiny opening book compressed by board permutations, and CPU cache-friendly C code, the solver determines winning and losing moves in <i>under one second for any state</i>.
+</p>
+<p>
+<span class="text-info fw-bold">Links:</span>
+<a href="https://github.com/mneyrane/Quantik-solver">[code]</a>
+</p>
+
+</div>
+
+<div class="clearfix">
+
+<h5 class="fw-bold">OpenTabulate - a data tabulation tool in Python</h5>
+
+<!--
+<img src="" class="float-md-end ms-md-3 mb-1 border border-light" alt="Linkable Open Data Environment logo" width="{{ page.imwidth }}" height="{{ page.imheight }}">
+-->
+
+<p>
+<span class="text-muted">(Jun 2018 - Aug 2020)</span>
+When I worked as a data scientist at Statistics Canada, I coded and documented <code>opentabulate</code>, a Python command-line tool to tabulate data together under a common schema.
+The key motivation for <code>opentabulate</code> is to support the <i>Linkable Open Data Environment</i> <a href="https://www.statcan.gc.ca/eng/lode">(LODE)</a>, a data portal that builds and distributes public Canadian infrastructure datasets under an open data license.
+Most of the data originates from municipal, provincial and federal authorities in Canada, but vary in format and schema by jurisdiction.
+My division <a href="https://github.com/CSBP-CPSE/LODE-ECDO">uses</a> <code>opentabulate</code> to automate the extraction, cleaning and merging of such data.
+</p>
+<p>
+<span class="text-info fw-bold">Links:</span>
+<a href="https://github.com/CSBP-CPSE/OpenTabulate">[code]</a>
+<a href="https://opentabulate.readthedocs.io/en/stable/">[docs]</a>
+</p>
+
+</div>

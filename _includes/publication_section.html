@@ -43,7 +43,7 @@
       <i>{{ item.title }}</i><br>
       {{ item.citation }}
       <span class="text-muted">({{ item.date }})</span>
-      <!-- update this when thesis is published to library -->
+      <a href="{{ item.link }}">[link]</a>
       {% capture pdf_link %}../assets/media/{{ item.pdf }}{% endcapture %}
       <a href="{{ pdf_link }}">[pdf]</a>
     {% endif %}

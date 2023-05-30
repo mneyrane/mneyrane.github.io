@@ -1,0 +1,331 @@
+---
+title: San Francisco fire service analysis
+---
+
+<h1>{{ page.title }}</h1>
+<hr>
+
+<h2>Introduction</h2>
+
+<p>
+Fire services are standard public institutions that provide fire prevention and fire suppression services.
+Beyond this, fire services also act as first responders for medical emergencies and rescue operations.
+Their efficiency and effectiveness are crucial to enhance public safety.
+</p>
+
+<p>
+The city of San Francisco has public datasets for fire service calls, non-medical incidents and safety complaints. 
+The records consist of categorical types, time of occurrence and response location. 
+Combined with other public data, we explore and analyze aspects of San Francisco's fire service purely for hobbyist purposes<sup><a href="#footnote-1">[1]</a></sup>. 
+Our analysis is twofold. 
+First, we collect descriptive statistics of service calls, incidents and complaints. 
+Second, we explore answers to the following questions:
+</p>
+
+<ol>
+  <li>What effect do fire safety complaints have with fire-related incidents?</li>
+  <li>Do fire-related incidents occur more often during particular seasons (e.g. summer, winter)?</li>
+  <li>Are fires and false alarms independent of the location's zoning type?</li>
+</ol>
+
+<p>
+Addressing these questions can offer insight on where and when fire service incidents occur.
+In turn, a more rigorous investigation can be used to inform allocation of fire service resources and policy.
+</p>
+
+
+<h2>Data methodology</h2>
+
+<p>
+Our data extraction, cleaning and analysis is carried out in Python using <code>pandas</code>, <code>geopandas</code>, <code>scipy.stats</code> and <code>seaborn</code>.
+All of the data used is obtained from the <a href="https://datasf.org/opendata/">San Francisco open data portal</a>, and can be found by searching
+</p>
+<ul>
+  <li>fire department calls for service</li>
+  <li>fire incidents</li>
+  <li>fire safety complaints</li>
+  <li>zoning map - zoning districts</li>
+  <li>bay area counties</li>
+</ul>
+<p>
+<b>The code is available on <a href="https://github.com/mneyrane/SF-fire-analysis">GitHub</a>.</b>
+For those interested, a discussion on data processing and limitations of our analysis is in the <code>README.md</code> file therein.
+</p>
+
+<h2>Analysis - Part 1: descriptive statistics</h2>
+
+<p>
+For calls, incidents and complaints, we extract all data points over exactly 3 years from 2020 to 2022.
+After extracting and cleaning the data, we have 439626 fire service calls, 94647 nonmedical incidents, 9295 fire safety complaints.
+In each case, these make up at least 98% of the original records before bad entries were removed.
+</p>
+
+<center>
+  <figure class="figure">
+   <img class="figure-img" src="{% link assets/images/sanfranciscofire/call_type_counts.svg %}">
+    <figcaption class="figure-caption text-center">Figure 1.1: Count of fire service call types. Medical incidents have been omitted.</figcaption>
+  </figure>
+</center>
+
+<p>
+In Fig. 1.1, counts of various fire service call types are shown, which display a total of 105734 calls (24.1%).
+Omitted from the figure, 333892 calls (75.9%) are responses to medical incidents.
+From the various types, the fire service can be seen responding to (claims of) incidents of varying severity.
+To our understanding, the call types are assigned to the call, which leaves the possibility that the incident is a false alarm.
+This is clarified by the nonmedical incidents data.
+</p>
+
+<center>
+<figure class="figure">
+  <img class="figure-img" src="{% link assets/images/sanfranciscofire/nm_situation_counts.svg %}">
+  <figcaption class="figure-caption text-center">Figure 1.2: Count of nonmedical incidents. Emergency medical incidents are included.</figcaption>
+</figure>
+</center>
+
+<center>
+  <figure class="figure">
+    <img class="figure-img" src="{% link assets/images/sanfranciscofire/nm_response_counts.svg %}">
+    <figcaption class="figure-caption text-center">Figure 1.3: Count of response types to nonmedical incidents. Emergency medical incidents are included.</figcaption>
+  </figure>
+</center>
+
+<p>
+Figs. 1.2 and 1.3 show counts of incident types and response types, respectively, for nonmedical incidents.
+Contrary to the name, emergency medical incidents are included in the count.
+Each incident and response category is defined by <a href="https://www.usfa.fema.gov/nfirs/">National Fire Incident Reporting System (NFIRS)</a> codes provided in the data.
+</p>
+
+<p>
+The top three incidents are 38466 false alarms (40.6%), 16551 (17.5%) service calls and 14895 fires (15.7%).
+The top three responses are 50272 regulatory practices (53.1%), 10825 are for providing assistance (11.4%), and 9632 involve fire extinguishment (10.2%).
+</p>
+
+<center>
+  <figure class="figure">
+    <img class="figure-img" src="{% link assets/images/sanfranciscofire/complaint_type_counts.svg %}">
+    <figcaption class="figure-caption text-center">Figure 1.4: Count of fire safety complaints.</figcaption>
+  </figure>
+</center>
+
+<p>
+Fig. 1.4 shows counts of fire safety complaints.
+These typically involve issues with alarms, extinguishers, exits or other regulatory violations.
+These make up 79% of documented complaints to the fire service.
+</p>
+
+<center>
+  <figure class="figure ">
+    <img class="figure-img" src="{% link assets/images/sanfranciscofire/fire_inc_and_complaints_KDE.svg %}">
+    <figcaption class="figure-caption">Figure 1.5: Kernel density estimation (KDE) plots of fire-related incidents and safety complaints in San Francisco. Darker colour means larger count.</figcaption>
+  </figure>
+</center>
+
+<p>
+Finally, Fig. 1.5 geographically visualizes the density of fire-related incidents and safety complaints. The San Francisco boundary is shown in black and the coordinates are associated with the <a href="https://epsg.io/2227">EPSG:2227</a> projection. The larger density (darker area) could be explained by the fact that it coincides with the downtown area, which has a larger population density and buildings.
+
+</p>
+
+<h3>Analysis - Part 2: inferential statistics</h3>
+
+<p>
+Recall that we initially posed some open-ended questions about the fire service data: 
+</p>
+
+<ol>
+  <li>What effect do fire safety complaints have with fire-related incidents?</li>
+  <li>Do fire-related incidents occur more often during particular seasons (e.g. summer, winter)?</li>
+  <li>Are fires and false alarms independent of the location's zoning type?</li>
+</ol>
+
+<p>
+We can formalize each question into something that we can answer with inferential statistics via hypothesis testing.
+Note that there may be several test formulations for a single question, which suggests further investigation is needed beyond this report.
+Moreover, it is not always possible to meet the test assumptions.
+Nonetheless, the goal here is to learn something about the fire service data.
+</p>
+
+<center>
+  <figure class="figure">
+    <img class="figure-img" src="{% link assets/images/sanfranciscofire/fire_incidents_vs_complaints_analysis.svg %}">
+    <figcaption class="figure-caption">Figure 2.1: Histogram of fire-related incidents within 500 meters and 30 days <i>before</i> or <i>after</i> a complaint.</figcaption>
+  </figure>
+</center>
+
+<p>
+  <b>1. What effect do fire safety complaints have with fire-related incidents?</b>
+</p>
+
+<p>
+  <i>Analysis.</i>
+  To simplify, we investigate a more specific question: do complaints reduce (or increase) the number of fire-related incidents locally, in a spatiotemporal sense?
+  The data is generated as follows. 
+  First, for each complaint we count all fire-related incidents within 500 meters of the complaint location that occurred within 30 days BEFORE the complaint submission date.
+  Additionally, we do the same but for AFTER the complaint submission date.
+  Now we draw random samples from the BEFORE and AFTER counts independently.
+</p>
+
+<p>
+  <i>Result.</i>
+  A Mann-Whitney U test is performed on the BEFORE and AFTER samples.
+  The null hypothesis states the probability that BEFORE > AFTER is equal to 0.5.
+  The test statistic is <i>U</i> = 39233381.5 with <i>p</i> = 0.2047, for sample sizes <i>n</i><sub>BEFORE</sub> = <i>n</i><sub>AFTER</sub> = 2000.
+  A histogram of the samples is shown in Fig. 2.1.
+</p>
+
+<p>
+  <i>Interpretation.</i>
+  There is not enough evidence here to conclude that fire safety complaints locally impact the occurrence of fire-related incidents.
+  This may be explained by complaints often seeking to improve survival from a fire, as opposed to preventing fires in general.
+  Examining how changing time units and distance impacts the results may be of future interest.
+</p>
+
+<center>
+  <figure class="figure">
+    <img class="figure-img" src="{% link assets/images/sanfranciscofire/fire_incidents_vs_seasons_analysis.svg %}">
+    <figcaption class="figure-caption">Figure 2.2: Histogram (left) and box plot (right) of fire-related incidents per 3-day time units, by season.</figcaption>
+  </figure>
+</center>
+
+<p>
+  <b>2. Do fire-related incidents occur more often during particular seasons (e.g. summer, winter)?</b>
+</p>
+
+<p>
+  <i>Analysis.</i>
+  Here we analyze counts of fire-related incidents per unit time of 3 days.
+  First, a subset of incidents are randomly drawn.
+  Next, each year is partitioned into 3-day intervals where each sample is binned.
+  The intervals themselves are assigned a season.
+  The choice of using 3-day intervals is to balance sample size and approximating normality via the Central Limit Theorem.
+</p>
+
+<table class="table table-bordered">
+  <tr>
+    <th scope="col">Comparison</th>
+    <th scope="col">Statistic</th>
+    <th scope="col"><i>p</i>-value</th>
+    <th scope="col">Lower CI</th>
+    <th scope="col">Upper CI</th>
+  </tr>
+  <tr>
+    <th scope="row">winter - spring</th>
+    <td>0.727</td>
+    <td>0.235</td>
+    <td>-0.481</td>
+    <td>1.934</td>
+  </tr>
+  <tr>
+    <th scope="row">winter - summer</th>
+    <td>-0.034</td>
+    <td>1.000</td>
+    <td>-1.242</td>
+    <td>1.173</td>
+  </tr>
+  <tr>
+    <th scope="row">winter - autumn</th>
+    <td>0.879</td>
+    <td>0.105</td>
+    <td>-0.332</td>
+    <td>2.090</td>
+  </tr>
+  <tr>
+    <th scope="row">spring - summer</th>
+    <td>-0.761</td>
+    <td>0.197</td>
+    <td>-1.965</td>
+    <td>0.443</td>
+  </tr>
+  <tr>
+    <th scope="row">spring - autumn</th>
+    <td>0.152</td>
+    <td>0.979</td>
+    <td>-1.055</td>
+    <td>1.360</td>
+  </tr>
+  <tr>
+    <th scope="row">summer - autumn</th>
+    <td>0.913</td>
+    <td>0.084</td>
+    <td>-0.294</td>
+    <td>2.121</td>
+  </tr>
+  <caption class="figure-caption">
+  Table 2.1: Tukey's HSD pairwise comparisons after significance with ANOVA.
+  </caption>
+</table>
+
+<p>
+  <i>Result.</i>
+  We perform ANOVA with 2000 incidents drawn at random, yielding <i>n</i> = 366 total samples after binning. A histogram and box plot of the samples are shown in Fig. 2.2.
+  Now, we run Levene's test (median) to check for homoscedasticity.
+  For Levene, the test statistic is <i>L</i> = 2.3302 with <i>p</i> = 0.074.
+  The result is not significant, so proceeding, ANOVA yields the test statistic <i>A</i> = 3.0746 with <i>p</i> &lt; 0.05.
+  Post hoc analysis with Tukey's HSD is given Tab. 2.1, in which the means between seasons are compared.
+</p>
+
+<p>
+  <i>Interpretation.</i>
+  We find a lack of evidence that fire incidents significantly differ by season. An explanation for a lack of difference is not clear.
+  Considering the fire category is broad, for future work it would be interesting to look at seasonal differences for specific types of fire incidents (e.g. outdoor fire, kitchen fire, etc.).
+</p>
+
+<p>
+  <b>3. Are fires and false alarms independent of the location's zoning type?</b>
+</p>
+
+<p>
+  <i>Analysis.</i>
+  To assemble the data, we filter out incidents to only consider false alarms and fires.
+  Since each incident has a location, we can identify its zoning type by performing a spatial join with San Francisco's zoning districts dataset.
+</p>
+<table class="table table-bordered">
+  <tr>
+    <th scope="col">Incident \ Zone type</th>
+    <th scope="col">Commerical</th>
+    <th scope="col">Industrial</th>
+    <th scope="col">Mixed use</th>
+    <th scope="col">Public</th>
+    <th scope="col">Residential</th>
+  </tr>
+  <tr>
+    <th scope="row">False alarm</th>
+    <td>508</td>
+    <td>94</td>
+    <td>1174</td>
+    <td>377</td>
+    <td>1467</td>
+  </tr>
+  <tr>
+    <th scope="row">Fire</th>
+    <td>137</td>
+    <td>132</td>
+    <td>533</td>
+    <td>225</td>
+    <td>353</td>
+  </tr>
+  <caption class="figure-caption">
+  Table 2.2: Contingency table of false alarms and fires for zoning districts.
+  </caption>
+</table>
+
+<p>
+  <i>Result.</i>
+  5000 incidents are sampled at random from the list of false alarms and fires.
+  This gives the contingency table in Tab. 2.2.
+  A chi-squared test for independence is performed on the data with <i>k</i> = 4 degrees of freedom.
+  The result is significant with test statistic is <i>X</i> = 221.7132 and <i>p</i> &lt; 0.001.
+</p>
+
+<p>
+  <i>Interpretation.</i>
+  We can conclude that the zoning type variable and incident variable (restricted to false alarms and fires) are very likely to be dependent.
+  This is somewhat expected since fire hazards and safety practices likely differ by zone, and the area (i.e. presence) of some zones are greater than others. 
+  For future work, it would be interesting to study this dependence in detail.
+</p>
+
+<hr>
+
+<p id="footnote-1">
+<span class="text-info">[1]</span> To clarify, the main purpose of this project is to demonstrate my background in data science and statistics!
+</p>
+

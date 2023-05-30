@@ -1,9 +1,9 @@
 - title : "Unrolled NESTA: Constructing stable, accurate and efficient neural networks for gradient-sparse imaging problems"
   authors : "M. Neyra-Nesterenko"
   type : "thesis"
-  citation : "MSc thesis"
-  date : "2023"
-  link : ~
+  citation : "MSc thesis, Simon Fraser University"
+  date : "Mar 2023"
+  link : "https://summit.sfu.ca/item/36038"
   pdf : "mscthesis.pdf"
 
 - title : "Restarts subject to approximate sharpness: a parameter-free and optimal scheme for first-order methods"

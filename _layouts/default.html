@@ -29,33 +29,23 @@
       </div>
     </nav>
 
-    <div class="bg-image overflow-hidden" style="background-image: url({% link assets/images/background.jpg %});"></div>
-
-    <main class="flex-fill bg-dark">
-      <div class="container-fluid py-3">
-        <div class="container p-5 my-4 text-light overflow-auto" id="content">
-          {{ content }}
-        </div>
-      </div>
-    </main>
+    {{ content }}
 
     <footer class="bg-primary">
-      <div class="container-fluid">
-        <div class="container text-center text-light small" id="footer">
-          <div class="row py-3">
-            <div class="col-md-4">
-              <span>
-                Website last updated on {{ site.time | date_to_long_string: "ordinal", "US" }}.<br>
-                Bootstrap theme: <a href="https://bootswatch.com/sandstone/">Sandstone</a>.
-                Powered by <a href="https://jekyllrb.com/">Jekyll</a>.
-              </span>
-            </div>
-            <div class="col-md-4">
-              <span><br>Copyright &copy; {{ site.time | date : "%Y" }} Maksym Neyra-Nesterenko.</span>
-            </div>
-            <div class="col-md-4">
-              {% include media_icons.html %}
-            </div>
+      <div class="container text-center text-light small" id="footer">
+        <div class="row py-3">
+          <div class="col-md-4">
+            <span>
+              Website last updated on {{ site.time | date_to_long_string: "ordinal", "US" }}.<br>
+              Bootstrap theme: <a href="https://bootswatch.com/sandstone/">Sandstone</a>.
+              Powered by <a href="https://jekyllrb.com/">Jekyll</a>.
+            </span>
+          </div>
+          <div class="col-md-4">
+            <span><br>Copyright &copy; {{ site.time | date : "%Y" }} Maksym Neyra-Nesterenko.</span>
+          </div>
+          <div class="col-md-4">
+            {% include media_icons.html %}
           </div>
         </div>
       </div>

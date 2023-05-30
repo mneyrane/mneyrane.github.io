@@ -8,10 +8,18 @@ collections:
     mneyrane:
         permalink: /:title/
         output: true
+    projects:
+        permalink: /:collection/:title/
+        output: true
 
 defaults:
     -
         scope:
             path: ""
         values:
-            layout: "default"
+            layout: "mainpage"
+    -
+        scope:
+            path: "_projects"
+        values:
+            layout: "blog"

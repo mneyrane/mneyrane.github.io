@@ -10,8 +10,8 @@ title: Research
 <div class="row">
   <div class="col">
     <ul>
-      <li>deep learning</li>
-      <li>optimal transport</li>
+      <li>machine learning</li>
+      <li>data science</li>
     </ul>
   </div>
   <div class="col">
@@ -23,13 +23,13 @@ title: Research
   <div class="col">
     <ul>
       <li>compressed sensing</li>
-      <li>partial differential equations</li>
+      <li>reinforcement learning</li>
     </ul>
   </div>
   <div class="col">
     <ul>
+      <li>optimal transport</li>
       <li>game theory</li>
-      <li>data science</li>
   </div>
 </div>
 
@@ -39,14 +39,13 @@ title: Research
 <h5 class="fw-bold">Deep neural networks for inverse problems in imaging</h5>
 
 <p> 
-In the past decade, deep learning has been incredibly successful in a myriad of image processing applications. As a result, there has been growing interest in applying deep learning to solve inverse problems in imaging. Being able to tackle imaging problems is fundamental to the progress of science, engineering and medicine. Despite recent work indicating that deep learning performs better than state-of-the-art model-based methods for imaging, deep neural networks have significant issues in stability and generalization. This raises the key question: <strong>can we construct deep neural networks for inverse problems in imaging with state-of-the-art performance guarantees?</strong>
+In the past decade, deep learning has been incredibly successful in a myriad of image processing applications. As a result, there has been growing interest in applying deep learning to solve inverse problems in imaging. For example, deep learning is being leveraged in <a href="https://doi.org/10.1109/JPROC.2019.2936204">medical imaging</a> to optimize sampling (to reduce scan times or radiation dose) and speed up reconstruction and inference. Being able to tackle imaging problems is fundamental to the progress of science, engineering and medicine. Despite recent work indicating that deep learning performs better than state-of-the-art model-based methods for imaging, deep neural networks have significant issues with stability and generalization. This raises the key question: <strong>can we construct deep neural networks for inverse problems in imaging with state-of-the-art performance guarantees?</strong>
 </p>
 
 <p>
 My supervisor <a href="https://benadcock.org/">Ben Adcock</a> and I contribute towards answering this question by extending the work of <a href="https://doi.org/10.1073/pnas.2107151119">Matthew Colbrook, et al</a>. In a <a href="https://doi.org/10.1007/s43670-022-00043-5">paper</a>, we construct neural networks that achieve the same performance guarantees as state-of-the-art model-based methods to recover a class of analysis-sparse signals.
-In my master's thesis, recovery is instead shown for gradient-sparse signals.
-The neural network constructions are based on unrolling an optimization algorithm, which are made efficient by applying a <i>restart scheme</i> to accelerate the image reconstruction. This has led to interesting <a href="https://arxiv.org/abs/2301.02268">side work</a> with Ben Adcock and Matthew Colbrook to examine general restart schemes in optimization.
-
+In my <a href="https://summit.sfu.ca/item/36038">master's thesis</a>, recovery of gradient-sparse signals is considered instead.
+The neural network constructions are based on unrolling an optimization algorithm, which are made efficient by applying a <i>restart scheme</i> to accelerate the image reconstruction. This has led to interesting <a href="https://arxiv.org/abs/2301.02268">side work</a> with Ben Adcock and Matthew Colbrook to examine general parameter-free restart schemes for continuous optimization. 
 </p>
 <p>
 Our work brings together several areas of mathematics, including convex optimization, compressed sensing, random matrix theory and deep learning.
