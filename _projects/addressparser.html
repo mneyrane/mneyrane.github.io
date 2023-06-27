@@ -1,0 +1,266 @@
+---
+title: Address parsing with recurrent neural networks
+---
+
+<h1>{{ page.title }}</h1>
+<hr>
+
+<h2>Introduction and background</h2>
+
+<p>
+Street addresses are a fundamental component of our civic infrastructure which geocode houses, businesses and other points of interest.
+Moreover, they form the economic backbone of postal services and e-commerce.
+The ability to maintain and process addresses on a large scale is crucial to their operation.
+</p>
+
+<p>
+<b>Address parsing</b>, or <b>address tokenization</b>, is a natural language task to decompose an address string into location-specific components (or tokens) that pinpoint a location.
+These tokens typically comprise a building number, street name and type, postal code, city or town, and so on.
+Parsing is an essential step before <a href="https://en.wikipedia.org/wiki/Address_geocoding">geocoding</a> or <a href="https://en.wikipedia.org/wiki/Postal_address_verification">address verification</a> on unstructured address data.
+Unfortunately, building a parser with extensive address coverage is a delicate matter, even when restricting to a single country or language.
+For example, there can be:
+</p>
+
+<ul>
+  <li>equivalent address formats <span class="text-muted">("101-500 Broadway" and "500 Broadway Unit 101")</span></li>
+  <li>language quirks like abbreviations <span class="text-muted">("Street" to "St")</span> and ordinal indicators <span class="text-muted">("1", "1st", "First")</span></li>
+  <li><a href="https://www.mjt.me.uk/posts/falsehoods-programmers-believe-about-addresses">edge cases</a> not covered by common assumptions about addresses</li>
+  <li>missing tokens</li>
+  <li>typos in address entry</li>
+</ul>
+
+<p>
+All of these can lead to nonunique ways to interpret addresses.
+Common address parsing methods include using regular expressions or other formal grammars.
+Such parsers are brittle when subjected to at least one of the above examples.
+In recent years, data-driven (i.e. statistical or neural) methods to tackle natural language tasks have emerged and become ubiquitous.
+Such methods have significant potential to successfully implement large-scale parsers with broad address coverage.
+A noteworthy example is <a href="">libpostal</a>, an international-scale address parser that uses a large statistical model with coverage of over 200 countries!
+</p>
+
+
+<h2>Project overview</h2>
+
+<p>
+Motivated by neural methods, I showcase a character-based Canadian address parser mockup, built by machine learning.
+The parser uses a <i>recurrent neural network</i>, dubbed <abbr title="Canadian Civic Address Parsing neural network">CCAPNet</abbr>, that classifies each character in an input address string to a token.
+During inference, a separate routine is used to synthesize the classification into a decomposition of the address.
+Concerning training, address data is often <i>imbalanced</i> due to the structured distribution of real civic addresses. To tackle this issue, I train the network on randomly generated addresses using a context-free grammar.
+To prevent overfitting, the network training is regularized by augmenting the data with typos.
+</p>
+
+<p>
+The entirety of this project is implemented in Python, with <b>the code available on <a href="https://github.com/mneyrane/CA-address-parser/">GitHub</a>.</b>
+<a href="https://pytorch.org">PyTorch</a> is used for the model definition and training.
+</p>
+
+<p>
+Note that my mockup draws inspiration from Jason Rigby's <a href="">AddressNet</a>, a recurrent neural network for parsing Australian addresses.
+Specifically, we adopt the character-level and typo augmentation techniques.
+Besides this, the CCAPNet implementation is written independently of Rigby's work.
+</p>
+
+
+<h2>Data methodology</h2>
+
+<p>
+This section summarizes the data representation and data assumptions we use for the parser.
+</p>
+
+<p>
+<i>Text normalization.</i>
+The input strings are normalized to only contain alphanumeric characters or a space, i.e. <code>'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 '</code>.
+Two consecutive spaces cannot occur, nor can spaces appear in the first or last character of the output.
+Lastly, non-ASCII characters (e.g. grave accent letters) are converted to their ASCII "equivalent" via <code>unidecode</code>.
+
+Address normalization is not used before parsing, since this is not our focus.
+However, CCAPNet is trained on specific data that implicitly expects a kind of normalized address.
+In particular, numbers have no ordinal indicators and are represented by digits. Abbreviations and their full words, of street types, directions, and provinces are included.
+</p>
+
+<p>
+<i>Address structure.</i>
+We consider Canada Post's address formatting when generating data.
+The format guidelines are detailed <a href="">here</a>.
+Moreover, considering Canada is bilingual in English and French, for simplicity we limit our scope to English address formats.
+</p>
+
+<p>
+<i>Address tokens.</i>
+Considering token categories for civic address data vary by municipality in Canada, we choose the categories somewhat arbitrarily.
+They are listed below, with the first being a dummy category to classify spaces in the text input.
+
+<ol start="0">
+  <li><code>SEPARATOR</code> : space character</li>
+  <li><code>UNIT</code> : unit number </li>
+  <li><code>HOUSE_NUM</code> : house number</li>
+  <li><code>ST_NAME</code> : street name</li>
+  <li><code>ST_TYPE</code> : street type</li>
+  <li><code>DIR_PREFIX</code> : direction prefix, appearing before the street identifier</li>
+  <li><code>DIR_SUFFIX</code> : direction suffix, appearing after the street identifier</li>
+  <li><code>CITY</code> : city or town name</li>
+  <li><code>PROVINCE</code> : province or territory</li>
+  <li><code>POST_CODE</code> : postal code</li>
+</ol>
+
+</p>
+
+<p>
+<i>Procedural generation.</i>
+To generate addresses, we first randomly draw a "template" for each address.
+A template is an ordered list of non-separator address tokens where each token occurs at most once, such as <code>[HOUSE_NUM, ST_NAME, ST_TYPE]</code>.
+A manually chosen list of templates conforming to Canada Post's address formats is defined <a href="https://github.com/mneyrane/CA-address-parser/blob/main/datasets/templates.json">here</a>.
+Each non-separator token has a specific algorithm to generate it.
+Some are purely algorithmic, like a postal code, and others pull from a fixed dataset, such as cities and street names.
+The generation algorithms are defined in a <a href="https://github.com/mneyrane/CA-address-parser/blob/main/generate_data.py">script</a> and <a href="https://github.com/mneyrane/CA-address-parser/blob/main/address/proc_gen.py">class definitions</a>.
+The fixed datasets used are <a href="https://github.com/mneyrane/CA-address-parser/tree/main/datasets">here</a>.
+</p>
+
+
+<h2>Model definition</h2>
+
+<center>
+  <figure class="figure">
+   <img class="figure-img" src="{% link assets/images/addressparser/CCAPNet.svg %}" height="160px">
+    <figcaption class="figure-caption text-center">Figure 1: Diagram of CCAPNet. The network takes a character sequence as input and classifies each character to an address token.</figcaption>
+  </figure>
+</center>
+
+<p>
+The recurrent neural network CCAPNet, short for <b>C</b>anadian <b>C</b>ivic <b>A</b>ddress <b>P</b>arsing neural <b>Net</b>work, is defined in Figure 1.
+It takes an arbitrary-length character sequence as input and maps each character to a vector embedding, with the sequence then fed to a bidirectional <abbr title="Gated Recurrent Unit">GRU</abbr>.
+The birectional output sequences <i>x<sub>f</sub></i> and <i>x<sub>b</sub></i> are then processed by independent 2-layer GRUs with residual connections.
+The resulting sequences are then concatenated and fed to a fully-connected layer.
+The output is a sequence of logits to classify characters.
+</p>
+
+<p>
+As per common use of residual connections and gating mechanisms, we use residual GRUs to stabilize training and improve generalization performance.
+The network parameters used are shown in Table 2, of which there are 34,427 trainable parameters.
+</p>
+
+<table class="table table-bordered">
+  <tr>
+    <th scope="col">Component</th>
+    <th scope="col">Parameters</th>
+  </tr>
+  <tr>
+    <td>Character embedding</td>
+    <td>Vocabulary size (37), embedding layer (8)</td>
+  </tr>
+  <tr>
+    <td>Bidirectional GRU</td>
+    <td>Hidden layer (32)</td>
+  </tr>
+  <tr>
+    <td>GRU</td>
+    <td>Hidden layer (32)</td>
+  </tr>
+  <tr>
+    <td>Affine</td>
+    <td>Input layer (64), output layer (11)</td>
+  </tr>
+  <caption class="figure-caption">
+  Table 2: CCAPNet parameters and layer sizes.
+  </caption>
+</table>
+
+
+<h2>Results and analysis</h2>
+
+<h4>Setup</h4>
+
+<p>
+For data, we randomly generate 192,000 addresses for training and 32,000 addresses for testing.
+We also use real test data by randomly drawing 56,320 addresses from the city of Winnipeg's <a href="https://data.winnipeg.ca/City-Planning/Addresses/cam2-ii3u">civic addresses</a>. Note that the real data only contains <code>UNIT</code>, <code>HOUSE_NUM</code>, <code>ST_NAME</code>, <code>ST_TYPE</code> and <code>DIR_SUFFIX</code> tokens.
+</p>
+
+<p>
+CCAPNet is trained with <a href="https://pytorch.org/docs/stable/generated/torch.optim.RMSprop.html">RMSprop</a> using cross-entropy loss on batches of addresses.
+We do this for 80 epochs with a batch size of 128 and step size 5e-4.
+Note that an epoch is referred to as a single pass of the training data, which in our case is 1,500 batches.
+To regularize the network, we apply L2 weight decay with parameter 5e-5 and augment the training data with random typos.
+Specifically for typos, we use deletions, adjacent swaps, duplications and replacements.
+To create realistic replacements, we only replace characters by neighbouring characters on a standard US keyboard.
+The number of typos that occur in each address is a Poisson random variable with rate = 1.
+</p>
+
+<h4>Training metrics</h4>
+
+<center>
+  <figure class="figure">
+   <img class="figure-img" src="{% link assets/images/addressparser/metric_plots.svg %}">
+    <figcaption class="figure-caption text-center">Figure 3: Per-character accuracy and parser accuracy for training data (left), generated and real test data (right). Training metrics are divided into segments of 100 batches, with the segment mean, maximum and minimum displayed.
+    </figcaption>
+  </figure>
+</center>
+
+<p>
+To measure performance, we consider two key metrics: per-character accuracy and parser accuracy.
+Per-character accuracy is measured over characters, by how often a single character is correctly classified.
+Parser accuracy is measured over sequences, by how often <i>all</i> characters are correctly classified in a sequence.
+The metrics are displayed in Figure 3.
+The training is monitored at each batch whereas testing is monitored at the end of each epoch.
+CCAPNet achieves 95% parser accuracy on both generated and real test data at the 76th epoch.
+</p>
+
+<h4>Model performance and example output</h4>
+
+<center>
+  <figure class="figure">
+   <img class="figure-img" src="{% link assets/images/addressparser/cm.svg %}">
+    <figcaption class="figure-caption text-center">Figure 4: CCAPNet confusion matrices on generated (left) and real (right) test data. The row and column indices correspond to true and predicted values, respectively. Grey squares represent zero.
+    </figcaption>
+  </figure>
+</center>
+
+<p>
+For this final section, we use the 76th epoch CCAPNet, which has 95% parser accuracy on both test datasets.
+Confusion matrices for the model are computed for the test data and visualized in Figure 4.
+Although the model predominantly makes correct predictions, the matrices suggest that it occasionally misclassifies:
+<ul>
+  <li>words that neighbour each other in the address</li>
+  <li>tokens that produce "similar" text, such as unit numbers, house numbers and directions, or street names, street types and cities</li>
+</ul>
+The former indicates the model leverages positional structure in the generated data. The latter indicates the model interprets certain text ambigiously, which may be amplified by the typo augmentation.
+</p>
+
+<p>
+Finally let us show two examples of model inference.
+An example with correct tokenization is:
+</p>
+
+<pre class="border p-2">
+<code>Input text: '1482 W Broadway, Burnaby, BC V6H1H4'
+Normalized text: '1482 W BROADWAY BURNABY BC V6H1H4'
+Tokens: {'HOUSE_NUM': '1482', 'DIR_PREFIX': 'W', 'ST_NAME': 'BROADWAY', 'CITY': 'BURNABY', 'PROVINCE': 'BC', 'POST_CODE': 'V6H1H4'}</code>
+</pre>
+
+<p>
+Below is an example of misclassification. The model does not identify the street type correctly:
+</p>
+
+<pre class="border p-2">
+<code>Input text: '150 Saint Andrews St'
+Normalized text: '150 SAINT ANDREWS ST'
+Tokens: {'HOUSE_NUM': '150', <span class="text-danger">'ST_NAME': 'SAINT'</span>, <span class="text-danger">'ST_TYPE': 'ANDREWS ST'</span>}</code>
+</pre>
+
+<p>
+For each character in <code>ANDREWS</code>, CCAPNet predicts a softmax probability &gt; 0.8 of the street type token.
+This may be partially explained by many street names occurring as one word in the training data.
+</p>
+
+<p>
+As a final remark, many further improvements to the mockup can be done.
+Some examples include:
+
+<ul>
+  <li>training a larger model with a larger dataset</li>
+  <li>extending address generation with more data, e.g. more address templates and token examples</li>
+  <li>preprocess input with address normalization, e.g. word expansions and abbreviations</li>
+  <li>text segmentation model to avoid discontinuous character classifications</li>
+</ul>
+
+Nonetheless, this mockup implementation hopefully served as a proof of concept that makes a case for data-driven address parsers!
+</p>

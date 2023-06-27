@@ -9,8 +9,30 @@ imwidth: 192
 
 <p>
 Distinct from my academic work, here is a showcase of programming work and hobbyist projects that I'm proud to share.
-<strong class="text-warning">More projects to come soon!</strong>
 </p>
+
+<div class="clearfix">
+
+<h5 class="fw-bold">Address parsing with recurrent neural networks</h5>
+
+<img src="{% link assets/images/addressparser/street_sign.png %}" class="float-md-end ms-md-3 mb-1 border border-light" alt="Street signs" width="{{ page.imwidth }}" height="{{ page.imheight }}">
+
+<p>
+<span class="text-muted">(Jun 22, 2023)</span>
+I created a mockup character-based Canadian address parser, built by machine learning and natural language processing.
+The parser uses a recurrent neural network that classifies each character in a string to be in an address token, like a house number, street name, or street type.
+The parser code is written in Python using <code>torch</code> for the neural network code.
+This project tackles the issue of imbalanced data when building data-driven address parsers, by training on randomly generated addresses.
+This suggests a potential for efficient and scalable address parsing with data-driven approaches.
+</p>
+
+<p>
+<span class="text-info fw-bold">Links:</span>
+<a href="{% link _projects/addressparser.html %}">[results]</a>
+<a href="https://github.com/mneyrane/CA-address-parser">[code]</a>
+</p>
+
+</div>
 
 <div class="clearfix">
 
@@ -48,9 +70,9 @@ The rules of the game are simple and reminiscent of Tic-tac-toe, but to contrast
 </p>
 
 <p>
-I wrote a strong solver for Quantik in C. 
-That is, assuming both players use minimax strategies, the solver determines which moves can force a win for the current player.
-Combining a pruned minimax search, a tiny opening book compressed by board permutations, and CPU cache-friendly C code, the solver determines winning and losing moves in <i>under one second for any state</i>.
+I wrote a solver for Quantik in C. 
+Assuming both players use an optimal strategy, the solver determines which moves can force a win for the current player.
+The solver decides winning moves in under one second, <i>for any state</i>, by using an optimized combinatorial search, opening book, and cache-friendly code.
 </p>
 <p>
 <span class="text-info fw-bold">Links:</span>
