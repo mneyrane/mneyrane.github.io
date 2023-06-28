@@ -68,7 +68,7 @@ In each case, these make up at least 98% of the original records before bad entr
 </center>
 
 <p>
-In Fig. 1.1, counts of various fire service call types are shown, which display a total of 105734 calls (24.1%).
+In Figure 1.1, counts of various fire service call types are shown, which display a total of 105734 calls (24.1%).
 Omitted from the figure, 333892 calls (75.9%) are responses to medical incidents.
 From the various types, the fire service can be seen responding to (claims of) incidents of varying severity.
 To our understanding, the call types are assigned to the call, which leaves the possibility that the incident is a false alarm.
@@ -90,7 +90,7 @@ This is clarified by the nonmedical incidents data.
 </center>
 
 <p>
-Figs. 1.2 and 1.3 show counts of incident types and response types, respectively, for nonmedical incidents.
+Figures 1.2 and 1.3 show counts of incident types and response types, respectively, for nonmedical incidents.
 Contrary to the name, emergency medical incidents are included in the count.
 Each incident and response category is defined by <a href="https://www.usfa.fema.gov/nfirs/">National Fire Incident Reporting System (NFIRS)</a> codes provided in the data.
 </p>
@@ -108,7 +108,7 @@ The top three responses are 50272 regulatory practices (53.1%), 10825 are for pr
 </center>
 
 <p>
-Fig. 1.4 shows counts of fire safety complaints.
+Figure 1.4 shows counts of fire safety complaints.
 These typically involve issues with alarms, extinguishers, exits or other regulatory violations.
 These make up 79% of documented complaints to the fire service.
 </p>
@@ -121,7 +121,7 @@ These make up 79% of documented complaints to the fire service.
 </center>
 
 <p>
-Finally, Fig. 1.5 geographically visualizes the density of fire-related incidents and safety complaints. The San Francisco boundary is shown in black and the coordinates are associated with the <a href="https://epsg.io/2227">EPSG:2227</a> projection. The larger density (darker area) could be explained by the fact that it coincides with the downtown area, which has a larger population density and buildings.
+Finally, Figure 1.5 geographically visualizes the density of fire-related incidents and safety complaints. The San Francisco boundary is shown in black and the coordinates are associated with the <a href="https://epsg.io/2227">EPSG:2227</a> projection. The larger density (darker area) could be explained by the fact that it coincides with the downtown area, which has a larger population density and buildings.
 
 </p>
 
@@ -167,9 +167,9 @@ Nonetheless, the goal here is to learn something about the fire service data.
 <p>
   <i>Result.</i>
   A Mann-Whitney U test is performed on the BEFORE and AFTER samples.
-  The null hypothesis states the probability that BEFORE > AFTER is equal to 0.5.
+  The null hypothesis states the probability that BEFORE &gt; AFTER is equal to 0.5.
   The test statistic is <i>U</i> = 39233381.5 with <i>p</i> = 0.2047, for sample sizes <i>n</i><sub>BEFORE</sub> = <i>n</i><sub>AFTER</sub> = 2000.
-  A histogram of the samples is shown in Fig. 2.1.
+  A histogram of the samples is shown in Figure 2.1.
 </p>
 
 <p>
@@ -256,11 +256,11 @@ Nonetheless, the goal here is to learn something about the fire service data.
 
 <p>
   <i>Result.</i>
-  We perform ANOVA with 2000 incidents drawn at random, yielding <i>n</i> = 366 total samples after binning. A histogram and box plot of the samples are shown in Fig. 2.2.
+  We perform ANOVA with 2000 incidents drawn at random, yielding <i>n</i> = 366 total samples after binning. A histogram and box plot of the samples are shown in Figure 2.2.
   Now, we run Levene's test (median) to check for homoscedasticity.
   For Levene, the test statistic is <i>L</i> = 2.3302 with <i>p</i> = 0.074.
   The result is not significant, so proceeding, ANOVA yields the test statistic <i>A</i> = 3.0746 with <i>p</i> &lt; 0.05.
-  Post hoc analysis with Tukey's HSD is given Tab. 2.1, in which the means between seasons are compared.
+  Post hoc analysis with Tukey's HSD is given Table 2.1, in which the means between seasons are compared.
 </p>
 
 <p>
@@ -311,7 +311,7 @@ Nonetheless, the goal here is to learn something about the fire service data.
 <p>
   <i>Result.</i>
   5000 incidents are sampled at random from the list of false alarms and fires.
-  This gives the contingency table in Tab. 2.2.
+  This gives the contingency table in Table 2.2.
   A chi-squared test for independence is performed on the data with <i>k</i> = 4 degrees of freedom.
   The result is significant with test statistic is <i>X</i> = 221.7132 and <i>p</i> &lt; 0.001.
 </p>
