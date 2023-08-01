@@ -17,7 +17,7 @@
   local : false
   i_class : bi-linkedin
   aria_label : LinkedIn
-  link : https://www.linkedin.com/in/maksym-neyra-nesterenko-401b0a222
+  link : https://www.linkedin.com/in/maksym-neyra-nesterenko/
 
 - name : ORCiD
   enabled : true
