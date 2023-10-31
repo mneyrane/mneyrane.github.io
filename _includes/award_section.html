@@ -7,7 +7,11 @@
   {% if award.during == include.during %}
   <li>
     <p>
-    <em>{{ award.name }}</em><br>
+    <em>{{ award.name }}</em>
+    {% if award.link %}
+      <a href="{{ award.link }}">[link]</a>
+    {% endif %}
+    <br>
     Value: <strong class="text-success">{{ award.value }}</strong>.  Received from {{ award.from }} by {{ award.by }}. <span class="text-muted">(held {{ award.held }})</span>
     </p>
   </li>
