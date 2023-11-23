@@ -13,7 +13,7 @@
       {{ item.authors }}<br>
       <i>{{ item.title }}</i><br>
       {{ item.citation }} 
-      <span class="text-muted">({{ item.date }})</span> 
+      <span class="text-secondary">({{ item.date }})</span> 
       <a href="{{ item.link }}">[link]</a>
       {% if item.preprint %}
       <br>
@@ -23,7 +23,7 @@
       {{ item.authors }}<br>
       {{ item.title }}<br>
       In: <i>{{ item.in }}</i>, {{ item.citation }} 
-      <span class="text-muted">({{ item.date }})</span> 
+      <span class="text-secondary">({{ item.date }})</span> 
       <a href="{{ item.link }}">[link]</a>
       {% if item.pdf %}
       {% capture pdf_link %}../assets/media/{{ item.pdf }}{% endcapture %}
@@ -42,7 +42,7 @@
       {{ item.authors }}<br>
       <i>{{ item.title }}</i><br>
       {{ item.citation }}
-      <span class="text-muted">({{ item.date }})</span>
+      <span class="text-secondary">({{ item.date }})</span>
       <a href="{{ item.link }}">[link]</a>
       {% capture pdf_link %}../assets/media/{{ item.pdf }}{% endcapture %}
       <a href="{{ pdf_link }}">[pdf]</a>

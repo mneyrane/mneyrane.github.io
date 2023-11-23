@@ -21,7 +21,7 @@ Responsibilities: mark assignments, quizzes, exams, invigilate exams, office hou
   {% for role in site.data.teaching_ta %}
   <li>
     <p>
-    {{ role.courses }} <span class={% if role.now == true %}"text-info"{% else %}"text-muted"{% endif %}>({{ role.period }})</span>
+    {{ role.courses }} <span class={% if role.now == true %}"text-info"{% else %}"text-secondary"{% endif %}>({{ role.period }})</span>
     </p>
   </li>
   {% endfor %}
