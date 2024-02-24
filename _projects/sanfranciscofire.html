@@ -16,7 +16,7 @@ Their efficiency and effectiveness are crucial to enhance public safety.
 <p>
 The city of San Francisco has public datasets for fire service calls, non-medical incidents and safety complaints. 
 The records consist of categorical types, time of occurrence and response location. 
-Combined with other public data, we explore and analyze aspects of San Francisco's fire service purely for hobbyist purposes<sup><a href="#footnote-1">[1]</a></sup>. 
+Combined with other public data, we explore and analyze aspects of San Francisco's fire service purely for hobbyist purposes. 
 Our analysis is twofold. 
 First, we collect descriptive statistics of service calls, incidents and complaints. 
 Second, we explore answers to the following questions:
@@ -29,7 +29,7 @@ Second, we explore answers to the following questions:
 </ol>
 
 <p>
-Addressing these questions can offer insight on where and when fire service incidents occur.
+Addressing these questions can offer insight on where and when fire-related incidents occur.
 In turn, a more rigorous investigation can be used to inform allocation of fire service resources and policy.
 </p>
 
@@ -56,8 +56,8 @@ For those interested, a discussion on data processing and limitations of our ana
 
 <p>
 For calls, incidents and complaints, we extract all data points over exactly 3 years from 2020 to 2022.
-After extracting and cleaning the data, we have 439626 fire service calls, 94647 nonmedical incidents, 9295 fire safety complaints.
-In each case, these make up at least 98% of the original records before bad entries were removed.
+After extracting and cleaning the data, we have 439,626 fire service calls, 94,647 nonmedical incidents, and 9,295 fire safety complaints.
+In each case, these make up at least 98% of the original records before erroneous entries were removed.
 </p>
 
 <center>
@@ -68,8 +68,8 @@ In each case, these make up at least 98% of the original records before bad entr
 </center>
 
 <p>
-In Figure 1.1, counts of various fire service call types are shown, which display a total of 105734 calls (24.1%).
-Omitted from the figure, 333892 calls (75.9%) are responses to medical incidents.
+In Figure 1.1, counts of various fire service call types are shown, which display a total of 105,734 calls (24.1%).
+Omitted from the figure, 333,892 calls (75.9%) are responses to medical incidents.
 From the various types, the fire service can be seen responding to (claims of) incidents of varying severity.
 To our understanding, the call types are assigned to the call, which leaves the possibility that the incident is a false alarm.
 This is clarified by the nonmedical incidents data.
@@ -96,8 +96,8 @@ Each incident and response category is defined by <a href="https://www.usfa.fema
 </p>
 
 <p>
-The top three incidents are 38466 false alarms (40.6%), 16551 (17.5%) service calls and 14895 fires (15.7%).
-The top three responses are 50272 regulatory practices (53.1%), 10825 are for providing assistance (11.4%), and 9632 involve fire extinguishment (10.2%).
+The top three incidents are 38,466 false alarms (40.6%), 16,551 (17.5%) service calls and 14,895 fires (15.7%).
+The top three responses are 50,272 regulatory practices (53.1%), 10,825 are for providing assistance (11.4%), and 9,632 involve fire extinguishment (10.2%).
 </p>
 
 <center>
@@ -121,7 +121,7 @@ These make up 79% of documented complaints to the fire service.
 </center>
 
 <p>
-Finally, Figure 1.5 geographically visualizes the density of fire-related incidents and safety complaints. The San Francisco boundary is shown in black and the coordinates are associated with the <a href="https://epsg.io/2227">EPSG:2227</a> projection. The larger density (darker area) could be explained by the fact that it coincides with the downtown area, which has a larger population density and buildings.
+Finally, Figure 1.5 geographically visualizes the density of fire-related incidents and safety complaints. The San Francisco city boundary is shown in black and the coordinates are associated with the <a href="https://epsg.io/2227">EPSG:2227</a> projection. The larger density (darker area) could be explained by the fact that it coincides with the downtown area, which has a larger population density and larger buildings.
 
 </p>
 
@@ -160,7 +160,7 @@ Nonetheless, the goal here is to learn something about the fire service data.
   To simplify, we investigate a more specific question: do complaints reduce (or increase) the number of fire-related incidents locally, in a spatiotemporal sense?
   The data is generated as follows. 
   First, for each complaint we count all fire-related incidents within 500 meters of the complaint location that occurred within 30 days BEFORE the complaint submission date.
-  Additionally, we do the same but for AFTER the complaint submission date.
+  Additionally, we do the same for AFTER the complaint submission date.
   Now we draw random samples from the BEFORE and AFTER counts independently.
 </p>
 

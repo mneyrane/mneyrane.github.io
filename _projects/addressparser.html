@@ -42,7 +42,7 @@ A noteworthy example is <a href="">libpostal</a>, an international-scale address
 <h2>Project overview</h2>
 
 <p>
-Motivated by neural methods, I showcase a character-based Canadian address parser mockup, built by machine learning.
+Motivated by neural methods, I showcase a character-based Canadian address parser mockup, built with machine learning.
 The parser uses a <i>recurrent neural network</i>, dubbed <abbr title="Canadian Civic Address Parsing neural network">CCAPNet</abbr>, that classifies each character in an input address string to a token.
 During inference, a separate routine is used to synthesize the classification into a decomposition of the address.
 Concerning training, address data is often <i>imbalanced</i> due to the structured distribution of real civic addresses. To tackle this issue, I train the network on randomly generated addresses using a context-free grammar.
@@ -74,7 +74,7 @@ Two consecutive spaces cannot occur, nor can spaces appear in the first or last 
 Lastly, non-ASCII characters (e.g. grave accent letters) are converted to their ASCII "equivalent" via <code>unidecode</code>.
 
 Address normalization is not used before parsing, since this is not our focus.
-However, CCAPNet is trained on specific data that implicitly expects a kind of normalized address.
+However, CCAPNet is trained on specific data that implicitly expects a normalized address.
 In particular, numbers have no ordinal indicators and are represented by digits. Abbreviations and their full words, of street types, directions, and provinces are included.
 </p>
 
@@ -220,7 +220,7 @@ Confusion matrices for the model are computed for the test data and visualized i
 Although the model predominantly makes correct predictions, the matrices suggest that it occasionally misclassifies:
 <ul>
   <li>words that neighbour each other in the address</li>
-  <li>tokens that produce "similar" text, such as unit numbers, house numbers and directions, or street names, street types and cities</li>
+  <li>tokens that produce similar text, such as unit numbers, house numbers and directions, or street names, street types and cities</li>
 </ul>
 The former indicates the model leverages positional structure in the generated data. The latter indicates the model interprets certain text ambigiously, which may be amplified by the typo augmentation.
 </p>
@@ -248,11 +248,11 @@ Tokens: {'HOUSE_NUM': '150', <span class="text-danger">'ST_NAME': 'SAINT'</span>
 
 <p>
 For each character in <code>ANDREWS</code>, CCAPNet predicts a softmax probability &gt; 0.8 of the street type token.
-This may be partially explained by many street names occurring as one word in the training data.
+This may be influenced by many street names occurring as one word in the training data.
 </p>
 
 <p>
-As a final remark, many further improvements to the mockup can be done.
+As a final remark, further improvements to the mockup can be done.
 Some examples include:
 
 <ul>
