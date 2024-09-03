@@ -1,29 +1,39 @@
 - location : "Simon Fraser University"
+  period : "Fall 2024"
+  courses : "Continuous optimization (MATH309), calculus workshop"
+  now : true
+
+- location : "Simon Fraser University"
+  period : "Summer 2024"
+  courses : "Vector and complex analysis (MATH254), linear analysis (MATH419)"
+  now : false
+
+- location : "Simon Fraser University"
   period : "Fall 2022"
-  courses : "Continuous Optimization (MATH309) and Algebra Workshop"
+  courses : "Continuous optimization (MATH309), algebra workshop"
   now : false
 
 - location : "Simon Fraser University"
   period : "Summer 2022"
-  courses : "Ordinary Differential Equations (MATH260)"
+  courses : "Ordinary differential equations (MATH260)"
   now : false
 
 - location : "Simon Fraser University"
   period : "Spring 2022"
-  courses : "Applied Calculus Workshop, Mathematics of Data Science (MATH475)"
+  courses : "Applied calculus workshop, mathematics of data science (MATH475)"
   now : false
 
 - location : "Simon Fraser University"
   period : "Spring 2021"
-  courses : "Vector Calculus (MATH252) and Applied Calculus Workshop"
+  courses : "Vector calculus (MATH252), applied calculus workshop"
   now : false
 
 - location : "Simon Fraser University"
   period : "Fall 2020"
-  courses : "Algebra Workshop"
+  courses : "Algebra workshop"
   now : false
 
 - location : "Simon Fraser University"
   period : "Fall 2018, Spring 2018"
-  courses : "Applied Calculus Workshop"
+  courses : "Applied calculus workshop"
   now : false

@@ -1,3 +1,8 @@
+- name : "West Coast Optimization Meeting (WCOM) Autumn"
+  type : "upcoming"
+  loc : "University of British Columbia, Vancouver, BC, CA"
+  date : "Sep 20-21, 2024"
+
 - name : "MSc thesis defence"
   type : "past"
   loc : "Simon Fraser University, Burnaby, BC, CA"

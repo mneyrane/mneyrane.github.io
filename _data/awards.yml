@@ -1,7 +1,23 @@
+- name : "Special Graduate Entrance Scholarship"
+  held : "May-Aug 2024"
+  value : "$10,000"
+  from : "Simon Fraser University"
+  by : "nomination"
+  during : "PhD"
+  link : ~
+
+- name : "PhD Research Scholarship"
+  held : "May-Aug 2024"
+  value : "$1,800"
+  from : "Simon Fraser University"
+  by : "nomination"
+  during : "PhD"
+  link : ~
+
 - name : "Graduate Travel and Research Award"
   held : "May-Aug 2022"
-  value : "$1,000"
-  from : "Simon Fraser University"
+  value : "$1,500"
+  from : "Simon Fraser University and SIAM"
   by : "application"
   during : "MSc"
   link : ~
