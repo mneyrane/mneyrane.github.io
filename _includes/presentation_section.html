@@ -10,7 +10,7 @@
   <li>
     <p>
       <em>{{ talk.title }}</em><br>
-      {{ talk.event }} <a href="{{ talk.link }}">[link]</a>{% if talk.slides %}{% capture slides_link %}../assets/media/slides/{{ talk.slides }}{% endcapture %} <a href="{{ slides_link }}">[slides]</a>{% endif %} - {{ talk.type }} ({{ talk.loc }} - <span class="text-info">{{ talk.date }}</span>)`
+      {{ talk.event }} <a href="{{ talk.link }}">[link]</a>{% if talk.slides %}{% capture slides_link %}../assets/media/slides/{{ talk.slides }}{% endcapture %} <a href="{{ slides_link }}">[slides]</a>{% endif %} - {{ talk.type }} ({{ talk.loc }} - <span class="text-info">{{ talk.date }}</span>)
     </p>
   </li>
   {% endif %}
