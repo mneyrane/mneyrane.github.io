@@ -6,11 +6,11 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2023-06-26T17:24:46.254222</dc:date>
+    <dc:date>2024-12-06T23:51:01.912461</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.7.1, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.9.2, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -26,7 +26,7 @@ L 569.893875 210.01325
 L 569.893875 0 
 L 0 0 
 z
-" style="fill: #f8f5f0"/>
+" style="fill: #f8f9fa"/>
   </g>
   <g id="axes_1">
    <g id="patch_2">
@@ -42,13 +42,13 @@ z
      <g id="line2d_1">
       <path d="M 53.761813 173.361 
 L 53.761813 20.157 
-" clip-path="url(#p4910e04c2a)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
+" clip-path="url(#p48b172f378)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_1">
       <!-- 0 -->
       <g style="fill: #262626" transform="translate(51.315001 188.03825) scale(0.088 -0.088)">
        <defs>
-        <path id="Arimo-Regular-30" d="M 3309 2203 
+        <path id="Arimo-30" d="M 3309 2203 
 Q 3309 1100 2920 518 
 Q 2531 -63 1772 -63 
 Q 1013 -63 631 515 
@@ -70,7 +70,7 @@ Q 2738 1284 2738 2203
 z
 " transform="scale(0.015625)"/>
        </defs>
-       <use xlink:href="#Arimo-Regular-30"/>
+       <use xlink:href="#Arimo-30"/>
       </g>
      </g>
     </g>
@@ -78,13 +78,13 @@ z
      <g id="line2d_2">
       <path d="M 106.965843 173.361 
 L 106.965843 20.157 
-" clip-path="url(#p4910e04c2a)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
+" clip-path="url(#p48b172f378)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_2">
       <!-- 30000 -->
       <g style="fill: #262626" transform="translate(94.73178 188.03825) scale(0.088 -0.088)">
        <defs>
-        <path id="Arimo-Regular-33" d="M 3278 1216 
+        <path id="Arimo-33" d="M 3278 1216 
 Q 3278 606 2890 271 
 Q 2503 -63 1784 -63 
 Q 1116 -63 717 239 
@@ -117,11 +117,11 @@ Q 3278 1638 3278 1216
 z
 " transform="scale(0.015625)"/>
        </defs>
-       <use xlink:href="#Arimo-Regular-33"/>
-       <use xlink:href="#Arimo-Regular-30" x="55.615234"/>
-       <use xlink:href="#Arimo-Regular-30" x="111.230469"/>
-       <use xlink:href="#Arimo-Regular-30" x="166.845703"/>
-       <use xlink:href="#Arimo-Regular-30" x="222.460938"/>
+       <use xlink:href="#Arimo-33"/>
+       <use xlink:href="#Arimo-30" x="55.615234"/>
+       <use xlink:href="#Arimo-30" x="111.230469"/>
+       <use xlink:href="#Arimo-30" x="166.845703"/>
+       <use xlink:href="#Arimo-30" x="222.460938"/>
       </g>
      </g>
     </g>
@@ -129,13 +129,13 @@ z
      <g id="line2d_3">
       <path d="M 160.169872 173.361 
 L 160.169872 20.157 
-" clip-path="url(#p4910e04c2a)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
+" clip-path="url(#p48b172f378)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_3">
       <!-- 60000 -->
       <g style="fill: #262626" transform="translate(147.935809 188.03825) scale(0.088 -0.088)">
        <defs>
-        <path id="Arimo-Regular-36" d="M 3278 1441 
+        <path id="Arimo-36" d="M 3278 1441 
 Q 3278 744 2900 340 
 Q 2522 -63 1856 -63 
 Q 1113 -63 719 490 
@@ -144,7 +144,7 @@ Q 325 3244 734 3856
 Q 1144 4469 1900 4469 
 Q 2897 4469 3156 3572 
 L 2619 3475 
-Q 2456 4013 1894 4013 
+Q 2453 4013 1894 4013 
 Q 1413 4013 1148 3564 
 Q 884 3116 884 2266 
 Q 1038 2550 1316 2698 
@@ -157,19 +157,18 @@ Q 2706 1894 2472 2153
 Q 2238 2413 1819 2413 
 Q 1425 2413 1183 2183 
 Q 941 1953 941 1550 
-Q 941 1213 1056 950 
-Q 1172 688 1373 539 
-Q 1575 391 1838 391 
+Q 941 1041 1192 716 
+Q 1444 391 1838 391 
 Q 2244 391 2475 664 
 Q 2706 938 2706 1416 
 z
 " transform="scale(0.015625)"/>
        </defs>
-       <use xlink:href="#Arimo-Regular-36"/>
-       <use xlink:href="#Arimo-Regular-30" x="55.615234"/>
-       <use xlink:href="#Arimo-Regular-30" x="111.230469"/>
-       <use xlink:href="#Arimo-Regular-30" x="166.845703"/>
-       <use xlink:href="#Arimo-Regular-30" x="222.460938"/>
+       <use xlink:href="#Arimo-36"/>
+       <use xlink:href="#Arimo-30" x="55.615234"/>
+       <use xlink:href="#Arimo-30" x="111.230469"/>
+       <use xlink:href="#Arimo-30" x="166.845703"/>
+       <use xlink:href="#Arimo-30" x="222.460938"/>
       </g>
      </g>
     </g>
@@ -177,13 +176,13 @@ z
      <g id="line2d_4">
       <path d="M 213.373901 173.361 
 L 213.373901 20.157 
-" clip-path="url(#p4910e04c2a)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
+" clip-path="url(#p48b172f378)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_4">
       <!-- 90000 -->
       <g style="fill: #262626" transform="translate(201.139838 188.03825) scale(0.088 -0.088)">
        <defs>
-        <path id="Arimo-Regular-39" d="M 3256 2291 
+        <path id="Arimo-39" d="M 3256 2291 
 Q 3256 1156 2842 546 
 Q 2428 -63 1663 -63 
 Q 1147 -63 836 154 
@@ -194,9 +193,8 @@ Q 2156 391 2422 841
 Q 2688 1291 2700 2125 
 Q 2575 1844 2272 1673 
 Q 1969 1503 1606 1503 
-Q 1213 1503 919 1687 
-Q 625 1872 462 2206 
-Q 300 2541 300 2988 
+Q 1013 1503 656 1909 
+Q 300 2316 300 2988 
 Q 300 3678 687 4073 
 Q 1075 4469 1766 4469 
 Q 2500 4469 2878 3925 
@@ -209,17 +207,17 @@ Q 1341 4013 1106 3736
 Q 872 3459 872 2988 
 Q 872 2506 1106 2226 
 Q 1341 1947 1741 1947 
-Q 1984 1947 2189 2059 
-Q 2394 2172 2519 2373 
+Q 1984 1947 2193 2058 
+Q 2403 2169 2523 2372 
 Q 2644 2575 2644 2834 
 z
 " transform="scale(0.015625)"/>
        </defs>
-       <use xlink:href="#Arimo-Regular-39"/>
-       <use xlink:href="#Arimo-Regular-30" x="55.615234"/>
-       <use xlink:href="#Arimo-Regular-30" x="111.230469"/>
-       <use xlink:href="#Arimo-Regular-30" x="166.845703"/>
-       <use xlink:href="#Arimo-Regular-30" x="222.460938"/>
+       <use xlink:href="#Arimo-39"/>
+       <use xlink:href="#Arimo-30" x="55.615234"/>
+       <use xlink:href="#Arimo-30" x="111.230469"/>
+       <use xlink:href="#Arimo-30" x="166.845703"/>
+       <use xlink:href="#Arimo-30" x="222.460938"/>
       </g>
      </g>
     </g>
@@ -227,15 +225,13 @@ z
      <g id="line2d_5">
       <path d="M 266.57793 173.361 
 L 266.57793 20.157 
-" clip-path="url(#p4910e04c2a)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
+" clip-path="url(#p48b172f378)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_5">
       <!-- 120000 -->
       <g style="fill: #262626" transform="translate(251.897055 188.03825) scale(0.088 -0.088)">
        <defs>
-        <path id="Arimo-Regular-31" d="M 3247 478 
-L 3247 0 
-L 488 0 
+        <path id="Arimo-31" d="M 488 0 
 L 488 478 
 L 1609 478 
 L 1609 3866 
@@ -245,17 +241,16 @@ L 1656 4403
 L 2175 4403 
 L 2175 478 
 L 3247 478 
+L 3247 0 
+L 488 0 
 z
 " transform="scale(0.015625)"/>
-        <path id="Arimo-Regular-32" d="M 3238 478 
-L 3238 0 
-L 322 0 
+        <path id="Arimo-32" d="M 322 0 
 L 322 397 
-Q 481 763 707 1044 
-Q 934 1325 1190 1550 
-Q 1447 1775 1697 1969 
-Q 1822 2066 1933 2162 
-Q 2044 2259 2144 2356 
+Q 481 763 711 1042 
+Q 941 1322 1194 1548 
+Q 1447 1775 1695 1969 
+Q 1944 2163 2144 2356 
 Q 2344 2550 2467 2762 
 Q 2591 2975 2591 3244 
 Q 2591 3606 2378 3806 
@@ -267,19 +262,23 @@ Q 409 3844 795 4156
 Q 1181 4469 1788 4469 
 Q 2453 4469 2811 4155 
 Q 3169 3841 3169 3263 
-Q 3169 2756 2703 2247 
-Q 2478 1997 1819 1463 
-Q 1119 891 941 478 
+Q 3169 3006 3051 2753 
+Q 2934 2500 2703 2247 
+Q 2472 1994 1819 1463 
+Q 1459 1169 1246 933 
+Q 1034 697 941 478 
 L 3238 478 
+L 3238 0 
+L 322 0 
 z
 " transform="scale(0.015625)"/>
        </defs>
-       <use xlink:href="#Arimo-Regular-31"/>
-       <use xlink:href="#Arimo-Regular-32" x="55.615234"/>
-       <use xlink:href="#Arimo-Regular-30" x="111.230469"/>
-       <use xlink:href="#Arimo-Regular-30" x="166.845703"/>
-       <use xlink:href="#Arimo-Regular-30" x="222.460938"/>
-       <use xlink:href="#Arimo-Regular-30" x="278.076172"/>
+       <use xlink:href="#Arimo-31"/>
+       <use xlink:href="#Arimo-32" x="55.615234"/>
+       <use xlink:href="#Arimo-30" x="111.230469"/>
+       <use xlink:href="#Arimo-30" x="166.845703"/>
+       <use xlink:href="#Arimo-30" x="222.460938"/>
+       <use xlink:href="#Arimo-30" x="278.076172"/>
       </g>
      </g>
     </g>
@@ -287,7 +286,7 @@ z
      <!-- Batch number -->
      <g style="fill: #262626" transform="translate(130.200448 200.82125) scale(0.096 -0.096)">
       <defs>
-       <path id="Arimo-Regular-42" d="M 3931 1241 
+       <path id="Arimo-42" d="M 3931 1241 
 Q 3931 653 3503 326 
 Q 3075 0 2313 0 
 L 525 0 
@@ -299,14 +298,6 @@ Q 3238 2413 2838 2322
 Q 3363 2259 3647 1970 
 Q 3931 1681 3931 1241 
 z
-M 3075 3263 
-Q 3075 3619 2831 3772 
-Q 2588 3925 2125 3925 
-L 1122 3925 
-L 1122 2531 
-L 2125 2531 
-Q 3075 2531 3075 3263 
-z
 M 3328 1288 
 Q 3328 2066 2234 2066 
 L 1122 2066 
@@ -315,8 +306,17 @@ L 2281 478
 Q 2828 478 3078 681 
 Q 3328 884 3328 1288 
 z
+M 3075 3263 
+Q 3075 3619 2831 3772 
+Q 2588 3925 2125 3925 
+L 1122 3925 
+L 1122 2531 
+L 2125 2531 
+Q 2603 2531 2839 2711 
+Q 3075 2891 3075 3263 
+z
 " transform="scale(0.015625)"/>
-       <path id="Arimo-Regular-61" d="M 1294 -63 
+       <path id="Arimo-61" d="M 1294 -63 
 Q 784 -63 528 206 
 Q 272 475 272 944 
 Q 272 1469 617 1750 
@@ -334,30 +334,30 @@ Q 3059 2859 3059 2306
 L 3059 850 
 Q 3059 600 3125 473 
 Q 3191 347 3375 347 
-Q 3463 347 3559 369 
+Q 3456 347 3559 369 
 L 3559 19 
-Q 3356 -31 3125 -31 
+Q 3347 -31 3125 -31 
 Q 2813 -31 2670 133 
 Q 2528 297 2509 647 
 L 2491 647 
 Q 2275 259 1989 98 
 Q 1703 -63 1294 -63 
 z
-M 2491 1669 
+M 1422 359 
+Q 1731 359 1972 500 
+Q 2213 641 2352 886 
+Q 2491 1131 2491 1391 
+L 2491 1669 
 L 1875 1656 
-Q 1481 1653 1275 1575 
+Q 1478 1650 1273 1575 
 Q 1069 1500 959 1344 
 Q 850 1188 850 934 
 Q 850 659 998 509 
 Q 1147 359 1422 359 
-Q 1734 359 1972 500 
-Q 2213 641 2352 886 
-Q 2491 1131 2491 1391 
-L 2491 1669 
 z
 " transform="scale(0.015625)"/>
-       <path id="Arimo-Regular-74" d="M 1731 25 
-Q 1456 -50 1163 -50 
+       <path id="Arimo-74" d="M 1731 25 
+Q 1453 -50 1163 -50 
 Q 488 -50 488 716 
 L 488 2972 
 L 97 2972 
@@ -372,11 +372,18 @@ L 1050 2972
 L 1050 838 
 Q 1050 594 1129 495 
 Q 1209 397 1406 397 
-Q 1513 397 1731 441 
+Q 1519 397 1731 441 
 L 1731 25 
 z
 " transform="scale(0.015625)"/>
-       <path id="Arimo-Regular-63" d="M 1728 -63 
+       <path id="Arimo-63" d="M 859 1706 
+Q 859 1031 1071 706 
+Q 1284 381 1713 381 
+Q 2013 381 2214 543 
+Q 2416 706 2463 1044 
+L 3031 1006 
+Q 2966 519 2616 228 
+Q 2266 -63 1728 -63 
 Q 1019 -63 645 385 
 Q 272 834 272 1694 
 Q 272 2547 647 2995 
@@ -388,25 +395,19 @@ Q 2391 2672 2212 2837
 Q 2034 3003 1706 3003 
 Q 1259 3003 1059 2706 
 Q 859 2409 859 1706 
-Q 859 1031 1071 706 
-Q 1284 381 1713 381 
-Q 2013 381 2214 543 
-Q 2416 706 2463 1044 
-L 3031 1006 
-Q 2966 519 2616 228 
-Q 2266 -63 1728 -63 
 z
 " transform="scale(0.015625)"/>
-       <path id="Arimo-Regular-68" d="M 991 2803 
+       <path id="Arimo-68" d="M 991 2803 
 Q 1172 3134 1426 3289 
 Q 1681 3444 2072 3444 
-Q 2622 3444 2883 3158 
-Q 3144 2872 3144 2253 
+Q 2622 3444 2883 3170 
+Q 3144 2897 3144 2253 
 L 3144 0 
 L 2578 0 
 L 2578 2144 
-Q 2578 2603 2417 2806 
-Q 2256 3009 1881 3009 
+Q 2578 2500 2512 2673 
+Q 2447 2847 2297 2928 
+Q 2147 3009 1881 3009 
 Q 1484 3009 1245 2734 
 Q 1006 2459 1006 1994 
 L 1006 0 
@@ -414,45 +415,41 @@ L 444 0
 L 444 4638 
 L 1006 4638 
 L 1006 3431 
-Q 1006 3306 1000 3167 
-Q 994 3028 989 2926 
-Q 984 2825 981 2803 
+Q 1006 3241 995 3037 
+Q 984 2834 981 2803 
 L 991 2803 
 z
 " transform="scale(0.015625)"/>
-       <path id="Arimo-Regular-20" transform="scale(0.015625)"/>
-       <path id="Arimo-Regular-6e" d="M 1006 1959 
+       <path id="Arimo-20" transform="scale(0.015625)"/>
+       <path id="Arimo-6e" d="M 2578 0 
+L 2578 2144 
+Q 2578 2478 2512 2662 
+Q 2447 2847 2303 2928 
+Q 2159 3009 1881 3009 
+Q 1475 3009 1240 2731 
+Q 1006 2453 1006 1959 
 L 1006 0 
 L 444 0 
 L 444 2659 
 Q 444 3250 425 3381 
 L 956 3381 
-Q 966 3291 972 3136 
-Q 978 2981 981 2803 
+Q 959 3366 962 3297 
+Q 966 3228 970 3139 
+Q 975 3050 981 2803 
 L 991 2803 
 Q 1184 3153 1439 3298 
 Q 1694 3444 2072 3444 
-Q 2628 3444 2886 3159 
-Q 3144 2875 3144 2253 
+Q 2628 3444 2886 3167 
+Q 3144 2891 3144 2253 
 L 3144 0 
 L 2578 0 
-L 2578 2144 
-Q 2578 2628 2422 2818 
-Q 2266 3009 1881 3009 
-Q 1475 3009 1240 2731 
-Q 1006 2453 1006 1959 
 z
 " transform="scale(0.015625)"/>
-       <path id="Arimo-Regular-75" d="M 2569 578 
-Q 2375 228 2120 82 
-Q 1866 -63 1488 -63 
-Q 931 -63 673 214 
-Q 416 491 416 1128 
-L 416 3381 
-L 981 3381 
+       <path id="Arimo-75" d="M 981 3381 
 L 981 1238 
-Q 981 731 1139 551 
-Q 1297 372 1678 372 
+Q 981 903 1047 718 
+Q 1113 534 1256 453 
+Q 1400 372 1678 372 
 Q 2084 372 2318 650 
 Q 2553 928 2553 1422 
 L 2553 3381 
@@ -460,19 +457,32 @@ L 3116 3381
 L 3116 722 
 Q 3116 131 3134 0 
 L 2603 0 
-Q 2600 16 2592 147 
-Q 2584 278 2578 578 
+Q 2600 16 2597 84 
+Q 2594 153 2589 242 
+Q 2584 331 2578 578 
 L 2569 578 
+Q 2375 228 2120 82 
+Q 1866 -63 1488 -63 
+Q 931 -63 673 214 
+Q 416 491 416 1128 
+L 416 3381 
+L 981 3381 
 z
 " transform="scale(0.015625)"/>
-       <path id="Arimo-Regular-6d" d="M 1003 1959 
+       <path id="Arimo-6d" d="M 2400 0 
+L 2400 2144 
+Q 2400 2634 2265 2821 
+Q 2131 3009 1781 3009 
+Q 1422 3009 1212 2734 
+Q 1003 2459 1003 1959 
 L 1003 0 
 L 444 0 
 L 444 2659 
 Q 444 3250 425 3381 
 L 956 3381 
-Q 966 3278 973 3109 
-Q 981 2941 981 2803 
+Q 959 3366 962 3297 
+Q 966 3228 970 3139 
+Q 975 3050 981 2803 
 L 991 2803 
 Q 1172 3163 1406 3303 
 Q 1641 3444 1978 3444 
@@ -492,28 +502,21 @@ Q 3366 3009 3161 2736
 Q 2956 2463 2956 1959 
 L 2956 0 
 L 2400 0 
-L 2400 2144 
-Q 2400 2634 2265 2821 
-Q 2131 3009 1781 3009 
-Q 1422 3009 1212 2734 
-Q 1003 2459 1003 1959 
 z
 " transform="scale(0.015625)"/>
-       <path id="Arimo-Regular-62" d="M 3291 1706 
+       <path id="Arimo-62" d="M 3291 1706 
 Q 3291 -63 2047 -63 
 Q 1663 -63 1408 76 
 Q 1153 216 994 525 
 L 988 525 
-Q 988 463 981 344 
-Q 975 225 969 123 
-Q 963 22 956 0 
+Q 988 428 975 229 
+Q 963 31 956 0 
 L 413 0 
 Q 431 169 431 697 
 L 431 4638 
 L 994 4638 
 L 994 3316 
-Q 994 3216 991 3095 
-Q 988 2975 981 2838 
+Q 994 3113 981 2838 
 L 994 2838 
 Q 1150 3163 1408 3303 
 Q 1666 3444 2047 3444 
@@ -531,7 +534,7 @@ Q 2322 353 2511 667
 Q 2700 981 2700 1688 
 z
 " transform="scale(0.015625)"/>
-       <path id="Arimo-Regular-65" d="M 863 1572 
+       <path id="Arimo-65" d="M 863 1572 
 Q 863 991 1103 675 
 Q 1344 359 1806 359 
 Q 2172 359 2392 506 
@@ -554,38 +557,36 @@ Q 888 2481 869 2003
 L 2694 2003 
 z
 " transform="scale(0.015625)"/>
-       <path id="Arimo-Regular-72" d="M 1006 1763 
-L 1006 0 
-L 444 0 
+       <path id="Arimo-72" d="M 444 0 
 L 444 2594 
 Q 444 2950 425 3381 
 L 956 3381 
-Q 969 3094 975 2922 
-Q 981 2750 981 2691 
+Q 981 2806 981 2691 
 L 994 2691 
-Q 1088 2997 1200 3166 
-Q 1309 3322 1450 3383 
-Q 1591 3444 1797 3444 
-Q 1913 3444 2025 3413 
+Q 1128 3125 1303 3284 
+Q 1478 3444 1797 3444 
+Q 1909 3444 2025 3413 
 L 2025 2897 
-Q 1919 2928 1725 2928 
+Q 1913 2928 1725 2928 
 Q 1375 2928 1190 2626 
 Q 1006 2325 1006 1763 
+L 1006 0 
+L 444 0 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#Arimo-Regular-42"/>
-      <use xlink:href="#Arimo-Regular-61" x="66.699219"/>
-      <use xlink:href="#Arimo-Regular-74" x="122.314453"/>
-      <use xlink:href="#Arimo-Regular-63" x="150.097656"/>
-      <use xlink:href="#Arimo-Regular-68" x="200.097656"/>
-      <use xlink:href="#Arimo-Regular-20" x="255.712891"/>
-      <use xlink:href="#Arimo-Regular-6e" x="283.496094"/>
-      <use xlink:href="#Arimo-Regular-75" x="339.111328"/>
-      <use xlink:href="#Arimo-Regular-6d" x="394.726562"/>
-      <use xlink:href="#Arimo-Regular-62" x="478.027344"/>
-      <use xlink:href="#Arimo-Regular-65" x="533.642578"/>
-      <use xlink:href="#Arimo-Regular-72" x="589.257812"/>
+      <use xlink:href="#Arimo-42"/>
+      <use xlink:href="#Arimo-61" x="66.699219"/>
+      <use xlink:href="#Arimo-74" x="122.314453"/>
+      <use xlink:href="#Arimo-63" x="150.097656"/>
+      <use xlink:href="#Arimo-68" x="200.097656"/>
+      <use xlink:href="#Arimo-20" x="255.712891"/>
+      <use xlink:href="#Arimo-6e" x="283.496094"/>
+      <use xlink:href="#Arimo-75" x="339.111328"/>
+      <use xlink:href="#Arimo-6d" x="394.726562"/>
+      <use xlink:href="#Arimo-62" x="478.027344"/>
+      <use xlink:href="#Arimo-65" x="533.642578"/>
+      <use xlink:href="#Arimo-72" x="589.257812"/>
      </g>
     </g>
    </g>
@@ -594,12 +595,12 @@ z
      <g id="line2d_6">
       <path d="M 43.129875 166.397182 
 L 277.032522 166.397182 
-" clip-path="url(#p4910e04c2a)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
+" clip-path="url(#p48b172f378)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_7">
       <!-- 0 -->
       <g style="fill: #262626" transform="translate(29.93625 169.585807) scale(0.088 -0.088)">
-       <use xlink:href="#Arimo-Regular-30"/>
+       <use xlink:href="#Arimo-30"/>
       </g>
      </g>
     </g>
@@ -607,13 +608,13 @@ L 277.032522 166.397182
      <g id="line2d_7">
       <path d="M 43.129875 138.519607 
 L 277.032522 138.519607 
-" clip-path="url(#p4910e04c2a)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
+" clip-path="url(#p48b172f378)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_8">
       <!-- 20 -->
       <g style="fill: #262626" transform="translate(25.042625 141.708232) scale(0.088 -0.088)">
-       <use xlink:href="#Arimo-Regular-32"/>
-       <use xlink:href="#Arimo-Regular-30" x="55.615234"/>
+       <use xlink:href="#Arimo-32"/>
+       <use xlink:href="#Arimo-30" x="55.615234"/>
       </g>
      </g>
     </g>
@@ -621,13 +622,13 @@ L 277.032522 138.519607
      <g id="line2d_8">
       <path d="M 43.129875 110.642032 
 L 277.032522 110.642032 
-" clip-path="url(#p4910e04c2a)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
+" clip-path="url(#p48b172f378)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_9">
       <!-- 40 -->
       <g style="fill: #262626" transform="translate(25.042625 113.830657) scale(0.088 -0.088)">
        <defs>
-        <path id="Arimo-Regular-34" d="M 2753 997 
+        <path id="Arimo-34" d="M 2753 997 
 L 2753 0 
 L 2222 0 
 L 2222 997 
@@ -640,19 +641,18 @@ L 3372 1441
 L 3372 997 
 L 2753 997 
 z
-M 666 1441 
+M 2222 1441 
+L 2222 3769 
+Q 2150 3631 2101 3543 
+Q 2053 3456 2013 3397 
+L 1003 1903 
+Q 916 1775 666 1441 
 L 2222 1441 
-L 2222 3197 
-Q 2222 3341 2223 3483 
-Q 2225 3625 2234 3769 
-Q 2163 3631 2109 3545 
-Q 2056 3459 2013 3397 
-L 666 1441 
 z
 " transform="scale(0.015625)"/>
        </defs>
-       <use xlink:href="#Arimo-Regular-34"/>
-       <use xlink:href="#Arimo-Regular-30" x="55.615234"/>
+       <use xlink:href="#Arimo-34"/>
+       <use xlink:href="#Arimo-30" x="55.615234"/>
       </g>
      </g>
     </g>
@@ -660,13 +660,13 @@ z
      <g id="line2d_9">
       <path d="M 43.129875 82.764457 
 L 277.032522 82.764457 
-" clip-path="url(#p4910e04c2a)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
+" clip-path="url(#p48b172f378)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_10">
       <!-- 60 -->
       <g style="fill: #262626" transform="translate(25.042625 85.953082) scale(0.088 -0.088)">
-       <use xlink:href="#Arimo-Regular-36"/>
-       <use xlink:href="#Arimo-Regular-30" x="55.615234"/>
+       <use xlink:href="#Arimo-36"/>
+       <use xlink:href="#Arimo-30" x="55.615234"/>
       </g>
      </g>
     </g>
@@ -674,13 +674,13 @@ L 277.032522 82.764457
      <g id="line2d_10">
       <path d="M 43.129875 54.886883 
 L 277.032522 54.886883 
-" clip-path="url(#p4910e04c2a)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
+" clip-path="url(#p48b172f378)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_11">
       <!-- 80 -->
       <g style="fill: #262626" transform="translate(25.042625 58.075508) scale(0.088 -0.088)">
        <defs>
-        <path id="Arimo-Regular-38" d="M 3281 1228 
+        <path id="Arimo-38" d="M 3281 1228 
 Q 3281 619 2893 278 
 Q 2506 -63 1781 -63 
 Q 1075 -63 676 271 
@@ -700,14 +700,6 @@ L 2391 2309
 Q 2813 2241 3047 1952 
 Q 3281 1663 3281 1228 
 z
-M 2588 3303 
-Q 2588 4050 1769 4050 
-Q 956 4050 956 3303 
-Q 956 2925 1170 2726 
-Q 1384 2528 1775 2528 
-Q 2172 2528 2380 2711 
-Q 2588 2894 2588 3303 
-z
 M 2697 1281 
 Q 2697 1691 2453 1898 
 Q 2209 2106 1769 2106 
@@ -717,10 +709,19 @@ Q 859 359 1788 359
 Q 2247 359 2472 579 
 Q 2697 800 2697 1281 
 z
+M 2588 3303 
+Q 2588 4050 1769 4050 
+Q 1372 4050 1164 3862 
+Q 956 3675 956 3303 
+Q 956 2925 1170 2726 
+Q 1384 2528 1775 2528 
+Q 2172 2528 2380 2711 
+Q 2588 2894 2588 3303 
+z
 " transform="scale(0.015625)"/>
        </defs>
-       <use xlink:href="#Arimo-Regular-38"/>
-       <use xlink:href="#Arimo-Regular-30" x="55.615234"/>
+       <use xlink:href="#Arimo-38"/>
+       <use xlink:href="#Arimo-30" x="55.615234"/>
       </g>
      </g>
     </g>
@@ -728,14 +729,14 @@ z
      <g id="line2d_11">
       <path d="M 43.129875 27.009308 
 L 277.032522 27.009308 
-" clip-path="url(#p4910e04c2a)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
+" clip-path="url(#p48b172f378)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_12">
       <!-- 100 -->
       <g style="fill: #262626" transform="translate(20.149 30.197933) scale(0.088 -0.088)">
-       <use xlink:href="#Arimo-Regular-31"/>
-       <use xlink:href="#Arimo-Regular-30" x="55.615234"/>
-       <use xlink:href="#Arimo-Regular-30" x="111.230469"/>
+       <use xlink:href="#Arimo-31"/>
+       <use xlink:href="#Arimo-30" x="55.615234"/>
+       <use xlink:href="#Arimo-30" x="111.230469"/>
       </g>
      </g>
     </g>
@@ -743,51 +744,49 @@ L 277.032522 27.009308
      <!-- Accuracy (%) -->
      <g style="fill: #262626" transform="translate(14.157 125.29575) rotate(-90) scale(0.096 -0.096)">
       <defs>
-       <path id="Arimo-Regular-41" d="M 1138 1288 
+       <path id="Arimo-41" d="M 3647 0 
+L 3144 1288 
+L 1138 1288 
 L 631 0 
 L 13 0 
 L 1809 4403 
 L 2488 4403 
 L 4256 0 
 L 3647 0 
-L 3144 1288 
-L 1138 1288 
 z
 M 2141 3953 
-Q 2088 3778 2014 3564 
-Q 1941 3350 1878 3188 
+L 2113 3866 
+Q 2034 3606 1881 3200 
 L 1319 1753 
 L 2966 1753 
 L 2400 3206 
-Q 2356 3316 2284 3516 
-Q 2213 3716 2141 3953 
+Q 2313 3422 2225 3694 
+L 2141 3953 
 z
 " transform="scale(0.015625)"/>
-       <path id="Arimo-Regular-79" d="M 597 -1328 
-Q 372 -1328 209 -1294 
+       <path id="Arimo-79" d="M 597 -1328 
+Q 366 -1328 209 -1294 
 L 209 -872 
 Q 328 -891 472 -891 
-Q 734 -891 957 -695 
-Q 1181 -500 1356 16 
+Q 997 -891 1303 -119 
+L 1356 16 
 L 16 3381 
 L 616 3381 
 L 1328 1513 
-Q 1406 1313 1495 1059 
-Q 1584 806 1634 613 
-Q 1713 834 1792 1053 
-Q 1872 1272 1947 1491 
+Q 1344 1469 1366 1408 
+Q 1388 1347 1506 1000 
+Q 1625 653 1634 613 
+L 1853 1228 
 L 2594 3381 
 L 3188 3381 
 L 1888 0 
-Q 1781 -269 1684 -470 
-Q 1588 -672 1497 -803 
-Q 1141 -1328 597 -1328 
+Q 1678 -541 1497 -805 
+Q 1316 -1069 1095 -1198 
+Q 875 -1328 597 -1328 
 z
 " transform="scale(0.015625)"/>
-       <path id="Arimo-Regular-28" d="M 1550 -1325 
-Q 959 -688 678 32 
-Q 397 753 397 1650 
-Q 397 2563 680 3283 
+       <path id="Arimo-28" d="M 397 1663 
+Q 397 2566 680 3284 
 Q 963 4003 1550 4638 
 L 2094 4638 
 Q 1509 3988 1236 3256 
@@ -795,10 +794,24 @@ Q 963 2525 963 1656
 Q 963 791 1233 62 
 Q 1503 -666 2094 -1325 
 L 1550 -1325 
+Q 959 -688 678 32 
+Q 397 753 397 1650 
+L 397 1663 
 z
 " transform="scale(0.015625)"/>
-       <path id="Arimo-Regular-25" d="M 1231 4441 
-Q 2209 4441 2209 3047 
+       <path id="Arimo-25" d="M 5463 1356 
+Q 5463 684 5209 323 
+Q 4956 -38 4463 -38 
+Q 3975 -38 3726 314 
+Q 3478 666 3478 1356 
+Q 3478 2069 3717 2417 
+Q 3956 2766 4475 2766 
+Q 4988 2766 5225 2408 
+Q 5463 2050 5463 1356 
+z
+M 1231 4441 
+Q 1728 4441 1968 4091 
+Q 2209 3741 2209 3047 
 Q 2209 2369 1961 2003 
 Q 1713 1638 1219 1638 
 Q 725 1638 476 2000 
@@ -806,11 +819,11 @@ Q 228 2363 228 3047
 Q 228 3744 468 4092 
 Q 709 4441 1231 4441 
 z
-M 4534 4403 
-L 1647 0 
+M 1647 0 
 L 1163 0 
 L 4044 4403 
 L 4534 4403 
+L 1647 0 
 z
 M 1750 3047 
 Q 1750 3597 1631 3850 
@@ -819,16 +832,8 @@ Q 938 4103 813 3854
 Q 688 3606 688 3047 
 Q 688 2506 813 2248 
 Q 938 1991 1225 1991 
-Q 1750 1991 1750 3047 
-z
-M 5463 1356 
-Q 5463 684 5209 323 
-Q 4956 -38 4463 -38 
-Q 3478 -38 3478 1356 
-Q 3478 2069 3717 2417 
-Q 3956 2766 4475 2766 
-Q 4988 2766 5225 2408 
-Q 5463 2050 5463 1356 
+Q 1497 1991 1623 2253 
+Q 1750 2516 1750 3047 
 z
 M 5000 1356 
 Q 5000 1916 4879 2167 
@@ -837,10 +842,14 @@ Q 4191 2419 4064 2172
 Q 3938 1925 3938 1356 
 Q 3938 822 4061 564 
 Q 4184 306 4469 306 
-Q 5000 306 5000 1356 
+Q 4744 306 4872 567 
+Q 5000 828 5000 1356 
 z
 " transform="scale(0.015625)"/>
-       <path id="Arimo-Regular-29" d="M 38 -1325 
+       <path id="Arimo-29" d="M 1734 1650 
+Q 1734 747 1451 28 
+Q 1169 -691 581 -1325 
+L 38 -1325 
 Q 625 -669 897 57 
 Q 1169 784 1169 1656 
 Q 1169 2528 895 3256 
@@ -848,30 +857,28 @@ Q 622 3984 38 4638
 L 581 4638 
 Q 1172 4000 1453 3279 
 Q 1734 2559 1734 1663 
-Q 1734 750 1451 29 
-Q 1169 -691 581 -1325 
-L 38 -1325 
+L 1734 1650 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#Arimo-Regular-41"/>
-      <use xlink:href="#Arimo-Regular-63" x="66.699219"/>
-      <use xlink:href="#Arimo-Regular-63" x="116.699219"/>
-      <use xlink:href="#Arimo-Regular-75" x="166.699219"/>
-      <use xlink:href="#Arimo-Regular-72" x="222.314453"/>
-      <use xlink:href="#Arimo-Regular-61" x="255.615234"/>
-      <use xlink:href="#Arimo-Regular-63" x="311.230469"/>
-      <use xlink:href="#Arimo-Regular-79" x="361.230469"/>
-      <use xlink:href="#Arimo-Regular-20" x="411.230469"/>
-      <use xlink:href="#Arimo-Regular-28" x="439.013672"/>
-      <use xlink:href="#Arimo-Regular-25" x="472.314453"/>
-      <use xlink:href="#Arimo-Regular-29" x="561.230469"/>
+      <use xlink:href="#Arimo-41"/>
+      <use xlink:href="#Arimo-63" x="66.699219"/>
+      <use xlink:href="#Arimo-63" x="116.699219"/>
+      <use xlink:href="#Arimo-75" x="166.699219"/>
+      <use xlink:href="#Arimo-72" x="222.314453"/>
+      <use xlink:href="#Arimo-61" x="255.615234"/>
+      <use xlink:href="#Arimo-63" x="311.230469"/>
+      <use xlink:href="#Arimo-79" x="361.230469"/>
+      <use xlink:href="#Arimo-20" x="411.230469"/>
+      <use xlink:href="#Arimo-28" x="439.013672"/>
+      <use xlink:href="#Arimo-25" x="472.314453"/>
+      <use xlink:href="#Arimo-29" x="561.230469"/>
      </g>
     </g>
    </g>
    <g id="PolyCollection_1">
     <defs>
-     <path id="m0d8d3941d5" d="M 53.761813 -116.892274 
+     <path id="me46666d0d9" d="M 53.761813 -116.892274 
 L 53.761813 -58.502693 
 L 53.93916 -113.282128 
 L 54.116507 -132.22494 
@@ -3276,13 +3283,13 @@ L 53.761813 -116.892274
 z
 " style="stroke: #4c72b0; stroke-opacity: 0.2; stroke-width: 0.8"/>
     </defs>
-    <g clip-path="url(#p4910e04c2a)">
-     <use xlink:href="#m0d8d3941d5" x="0" y="210.01325" style="fill: #4c72b0; fill-opacity: 0.2; stroke: #4c72b0; stroke-opacity: 0.2; stroke-width: 0.8"/>
+    <g clip-path="url(#p48b172f378)">
+     <use xlink:href="#me46666d0d9" x="0" y="210.01325" style="fill: #4c72b0; fill-opacity: 0.2; stroke: #4c72b0; stroke-opacity: 0.2; stroke-width: 0.8"/>
     </g>
    </g>
    <g id="PolyCollection_2">
     <defs>
-     <path id="mbee5941118" d="M 53.761813 -43.616068 
+     <path id="m7ac69d7385" d="M 53.761813 -43.616068 
 L 53.761813 -43.616068 
 L 53.93916 -43.616068 
 L 54.116507 -43.616068 
@@ -5687,8 +5694,8 @@ L 53.761813 -43.616068
 z
 " style="stroke: #dd8452; stroke-opacity: 0.2; stroke-width: 0.8"/>
     </defs>
-    <g clip-path="url(#p4910e04c2a)">
-     <use xlink:href="#mbee5941118" x="0" y="210.01325" style="fill: #dd8452; fill-opacity: 0.2; stroke: #dd8452; stroke-opacity: 0.2; stroke-width: 0.8"/>
+    <g clip-path="url(#p48b172f378)">
+     <use xlink:href="#m7ac69d7385" x="0" y="210.01325" style="fill: #dd8452; fill-opacity: 0.2; stroke: #dd8452; stroke-opacity: 0.2; stroke-width: 0.8"/>
     </g>
    </g>
    <g id="line2d_12">
@@ -6193,7 +6200,7 @@ L 264.981809 28.406532
 L 265.336503 28.325966 
 L 266.400583 28.38409 
 L 266.400583 28.38409 
-" clip-path="url(#p4910e04c2a)" style="fill: none; stroke: #4c72b0; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#p48b172f378)" style="fill: none; stroke: #4c72b0; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="line2d_13">
     <path d="M 53.761813 166.397182 
@@ -7183,7 +7190,7 @@ L 266.04589 44.324906
 L 266.223236 44.552108 
 L 266.400583 44.182452 
 L 266.400583 44.182452 
-" clip-path="url(#p4910e04c2a)" style="fill: none; stroke: #dd8452; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#p48b172f378)" style="fill: none; stroke: #dd8452; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="line2d_14"/>
    <g id="line2d_15"/>
@@ -7211,24 +7218,25 @@ L 277.032522 20.157
     <!-- training -->
     <g style="fill: #262626" transform="translate(144.339448 14.157) scale(0.096 -0.096)">
      <defs>
-      <path id="Arimo-Regular-69" d="M 991 4638 
-L 991 4100 
-L 428 4100 
-L 428 4638 
-L 991 4638 
-z
-M 991 3381 
-L 991 0 
-L 428 0 
+      <path id="Arimo-69" d="M 428 0 
 L 428 3381 
 L 991 3381 
+L 991 0 
+L 428 0 
+z
+M 428 4100 
+L 428 4638 
+L 991 4638 
+L 991 4100 
+L 428 4100 
 z
 " transform="scale(0.015625)"/>
-      <path id="Arimo-Regular-67" d="M 1713 -1328 
+      <path id="Arimo-67" d="M 1713 -1328 
 Q 1159 -1328 831 -1111 
 Q 503 -894 409 -494 
 L 975 -413 
-Q 1091 -900 1728 -900 
+Q 1031 -647 1223 -773 
+Q 1416 -900 1728 -900 
 Q 2569 -900 2569 84 
 L 2569 628 
 L 2563 628 
@@ -7241,34 +7249,35 @@ Q 897 3434 1538 3434
 Q 1897 3434 2161 3270 
 Q 2425 3106 2569 2803 
 L 2575 2803 
-Q 2575 2866 2581 2998 
-Q 2588 3131 2597 3250 
-Q 2606 3369 2613 3381 
+Q 2575 2897 2587 3128 
+Q 2600 3359 2613 3381 
 L 3147 3381 
 Q 3128 3213 3128 2681 
 L 3128 97 
 Q 3128 -1328 1713 -1328 
 z
 M 2569 1691 
-Q 2569 2306 2317 2661 
-Q 2066 3016 1675 3016 
+Q 2569 2103 2456 2401 
+Q 2344 2700 2139 2858 
+Q 1934 3016 1675 3016 
 Q 1244 3016 1047 2703 
 Q 850 2391 850 1691 
 Q 850 997 1034 694 
 Q 1219 391 1666 391 
-Q 2066 391 2317 739 
-Q 2569 1088 2569 1691 
+Q 1931 391 2137 547 
+Q 2344 703 2456 995 
+Q 2569 1288 2569 1691 
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#Arimo-Regular-74"/>
-     <use xlink:href="#Arimo-Regular-72" x="27.783203"/>
-     <use xlink:href="#Arimo-Regular-61" x="61.083984"/>
-     <use xlink:href="#Arimo-Regular-69" x="116.699219"/>
-     <use xlink:href="#Arimo-Regular-6e" x="138.916016"/>
-     <use xlink:href="#Arimo-Regular-69" x="194.53125"/>
-     <use xlink:href="#Arimo-Regular-6e" x="216.748047"/>
-     <use xlink:href="#Arimo-Regular-67" x="272.363281"/>
+     <use xlink:href="#Arimo-74"/>
+     <use xlink:href="#Arimo-72" x="27.783203"/>
+     <use xlink:href="#Arimo-61" x="61.083984"/>
+     <use xlink:href="#Arimo-69" x="116.699219"/>
+     <use xlink:href="#Arimo-6e" x="138.916016"/>
+     <use xlink:href="#Arimo-69" x="194.53125"/>
+     <use xlink:href="#Arimo-6e" x="216.748047"/>
+     <use xlink:href="#Arimo-67" x="272.363281"/>
     </g>
    </g>
    <g id="legend_1">
@@ -7288,12 +7297,12 @@ z
     <g id="text_15">
      <!-- metric -->
      <g style="fill: #262626" transform="translate(227.344334 138.2425) scale(0.096 -0.096)">
-      <use xlink:href="#Arimo-Regular-6d"/>
-      <use xlink:href="#Arimo-Regular-65" x="83.300781"/>
-      <use xlink:href="#Arimo-Regular-74" x="138.916016"/>
-      <use xlink:href="#Arimo-Regular-72" x="166.699219"/>
-      <use xlink:href="#Arimo-Regular-69" x="200"/>
-      <use xlink:href="#Arimo-Regular-63" x="222.216797"/>
+      <use xlink:href="#Arimo-6d"/>
+      <use xlink:href="#Arimo-65" x="83.300781"/>
+      <use xlink:href="#Arimo-74" x="138.916016"/>
+      <use xlink:href="#Arimo-72" x="166.699219"/>
+      <use xlink:href="#Arimo-69" x="200"/>
+      <use xlink:href="#Arimo-63" x="222.216797"/>
      </g>
     </g>
     <g id="line2d_16">
@@ -7306,18 +7315,18 @@ L 229.307647 147.93175
      <!-- per-char -->
      <g style="fill: #262626" transform="translate(236.347647 151.01175) scale(0.088 -0.088)">
       <defs>
-       <path id="Arimo-Regular-70" d="M 3291 1706 
+       <path id="Arimo-70" d="M 3291 1706 
 Q 3291 -63 2047 -63 
 Q 1266 -63 997 525 
 L 981 525 
-Q 994 503 994 -6 
+Q 994 500 994 -6 
 L 994 -1328 
 L 431 -1328 
 L 431 2691 
 Q 431 3213 413 3381 
 L 956 3381 
-Q 959 3369 967 3259 
-Q 975 3150 981 3023 
+Q 959 3369 965 3292 
+Q 972 3216 980 3056 
 Q 988 2897 988 2838 
 L 1000 2838 
 Q 1150 3150 1397 3295 
@@ -7328,30 +7337,31 @@ z
 M 2700 1694 
 Q 2700 2400 2509 2703 
 Q 2319 3006 1903 3006 
-Q 1441 3006 1217 2686 
-Q 994 2366 994 1650 
+Q 1569 3006 1380 2865 
+Q 1191 2725 1092 2426 
+Q 994 2128 994 1650 
 Q 994 984 1206 668 
 Q 1419 353 1897 353 
 Q 2316 353 2508 661 
 Q 2700 969 2700 1694 
 z
 " transform="scale(0.015625)"/>
-       <path id="Arimo-Regular-2d" d="M 1847 1950 
-L 1847 1450 
-L 284 1450 
+       <path id="Arimo-2d" d="M 284 1450 
 L 284 1950 
 L 1847 1950 
+L 1847 1450 
+L 284 1450 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#Arimo-Regular-70"/>
-      <use xlink:href="#Arimo-Regular-65" x="55.615234"/>
-      <use xlink:href="#Arimo-Regular-72" x="111.230469"/>
-      <use xlink:href="#Arimo-Regular-2d" x="144.53125"/>
-      <use xlink:href="#Arimo-Regular-63" x="177.832031"/>
-      <use xlink:href="#Arimo-Regular-68" x="227.832031"/>
-      <use xlink:href="#Arimo-Regular-61" x="283.447266"/>
-      <use xlink:href="#Arimo-Regular-72" x="339.0625"/>
+      <use xlink:href="#Arimo-70"/>
+      <use xlink:href="#Arimo-65" x="55.615234"/>
+      <use xlink:href="#Arimo-72" x="111.230469"/>
+      <use xlink:href="#Arimo-2d" x="144.53125"/>
+      <use xlink:href="#Arimo-63" x="177.832031"/>
+      <use xlink:href="#Arimo-68" x="227.832031"/>
+      <use xlink:href="#Arimo-61" x="283.447266"/>
+      <use xlink:href="#Arimo-72" x="339.0625"/>
      </g>
     </g>
     <g id="line2d_17">
@@ -7364,20 +7374,20 @@ L 229.307647 160.535
      <!-- parser -->
      <g style="fill: #262626" transform="translate(236.347647 163.615) scale(0.088 -0.088)">
       <defs>
-       <path id="Arimo-Regular-73" d="M 2969 934 
+       <path id="Arimo-73" d="M 2969 934 
 Q 2969 456 2608 196 
 Q 2247 -63 1597 -63 
 Q 966 -63 623 145 
 Q 281 353 178 794 
 L 675 891 
-Q 816 366 1597 366 
+Q 747 619 972 492 
+Q 1197 366 1597 366 
 Q 2025 366 2223 497 
 Q 2422 628 2422 891 
 Q 2422 1091 2284 1216 
 Q 2147 1341 1841 1422 
-Q 1478 1519 1264 1581 
-Q 1050 1644 934 1689 
-Q 819 1734 750 1775 
+L 1438 1528 
+Q 953 1653 748 1773 
 Q 544 1894 428 2066 
 Q 313 2238 313 2488 
 Q 313 2950 642 3192 
@@ -7385,23 +7395,26 @@ Q 972 3434 1603 3434
 Q 2163 3434 2492 3237 
 Q 2822 3041 2909 2606 
 L 2403 2544 
-Q 2306 3009 1603 3009 
-Q 859 3009 859 2544 
-Q 859 2372 962 2261 
-Q 1066 2150 1356 2078 
-Q 1747 1984 2100 1873 
-Q 2453 1763 2606 1653 
-Q 2784 1525 2876 1351 
-Q 2969 1178 2969 934 
+Q 2356 2769 2151 2889 
+Q 1947 3009 1603 3009 
+Q 1222 3009 1040 2893 
+Q 859 2778 859 2544 
+Q 859 2400 934 2306 
+Q 1009 2213 1156 2147 
+Q 1303 2081 1775 1966 
+Q 2222 1853 2419 1758 
+Q 2616 1663 2730 1547 
+Q 2844 1431 2906 1279 
+Q 2969 1128 2969 934 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#Arimo-Regular-70"/>
-      <use xlink:href="#Arimo-Regular-61" x="55.615234"/>
-      <use xlink:href="#Arimo-Regular-72" x="111.230469"/>
-      <use xlink:href="#Arimo-Regular-73" x="144.53125"/>
-      <use xlink:href="#Arimo-Regular-65" x="194.53125"/>
-      <use xlink:href="#Arimo-Regular-72" x="250.146484"/>
+      <use xlink:href="#Arimo-70"/>
+      <use xlink:href="#Arimo-61" x="55.615234"/>
+      <use xlink:href="#Arimo-72" x="111.230469"/>
+      <use xlink:href="#Arimo-73" x="144.53125"/>
+      <use xlink:href="#Arimo-65" x="194.53125"/>
+      <use xlink:href="#Arimo-72" x="250.146484"/>
      </g>
     </g>
    </g>
@@ -7420,12 +7433,12 @@ z
      <g id="line2d_18">
       <path d="M 339.423167 173.361 
 L 339.423167 20.157 
-" clip-path="url(#p062728c54f)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
+" clip-path="url(#pb4afb611ff)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_18">
       <!-- 0 -->
       <g style="fill: #262626" transform="translate(336.976354 188.03825) scale(0.088 -0.088)">
-       <use xlink:href="#Arimo-Regular-30"/>
+       <use xlink:href="#Arimo-30"/>
       </g>
      </g>
     </g>
@@ -7433,13 +7446,13 @@ L 339.423167 20.157
      <g id="line2d_19">
       <path d="M 393.255767 173.361 
 L 393.255767 20.157 
-" clip-path="url(#p062728c54f)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
+" clip-path="url(#pb4afb611ff)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_19">
       <!-- 20 -->
       <g style="fill: #262626" transform="translate(388.362142 188.03825) scale(0.088 -0.088)">
-       <use xlink:href="#Arimo-Regular-32"/>
-       <use xlink:href="#Arimo-Regular-30" x="55.615234"/>
+       <use xlink:href="#Arimo-32"/>
+       <use xlink:href="#Arimo-30" x="55.615234"/>
       </g>
      </g>
     </g>
@@ -7447,13 +7460,13 @@ L 393.255767 20.157
      <g id="line2d_20">
       <path d="M 447.088367 173.361 
 L 447.088367 20.157 
-" clip-path="url(#p062728c54f)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
+" clip-path="url(#pb4afb611ff)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_20">
       <!-- 40 -->
       <g style="fill: #262626" transform="translate(442.194742 188.03825) scale(0.088 -0.088)">
-       <use xlink:href="#Arimo-Regular-34"/>
-       <use xlink:href="#Arimo-Regular-30" x="55.615234"/>
+       <use xlink:href="#Arimo-34"/>
+       <use xlink:href="#Arimo-30" x="55.615234"/>
       </g>
      </g>
     </g>
@@ -7461,13 +7474,13 @@ L 447.088367 20.157
      <g id="line2d_21">
       <path d="M 500.920967 173.361 
 L 500.920967 20.157 
-" clip-path="url(#p062728c54f)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
+" clip-path="url(#pb4afb611ff)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_21">
       <!-- 60 -->
       <g style="fill: #262626" transform="translate(496.027342 188.03825) scale(0.088 -0.088)">
-       <use xlink:href="#Arimo-Regular-36"/>
-       <use xlink:href="#Arimo-Regular-30" x="55.615234"/>
+       <use xlink:href="#Arimo-36"/>
+       <use xlink:href="#Arimo-30" x="55.615234"/>
       </g>
      </g>
     </g>
@@ -7475,13 +7488,13 @@ L 500.920967 20.157
      <g id="line2d_22">
       <path d="M 554.753567 173.361 
 L 554.753567 20.157 
-" clip-path="url(#p062728c54f)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
+" clip-path="url(#pb4afb611ff)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_22">
       <!-- 80 -->
       <g style="fill: #262626" transform="translate(549.859942 188.03825) scale(0.088 -0.088)">
-       <use xlink:href="#Arimo-Regular-38"/>
-       <use xlink:href="#Arimo-Regular-30" x="55.615234"/>
+       <use xlink:href="#Arimo-38"/>
+       <use xlink:href="#Arimo-30" x="55.615234"/>
       </g>
      </g>
     </g>
@@ -7489,9 +7502,7 @@ L 554.753567 20.157
      <!-- Epoch -->
      <g style="fill: #262626" transform="translate(432.133052 200.82125) scale(0.096 -0.096)">
       <defs>
-       <path id="Arimo-Regular-45" d="M 3994 488 
-L 3994 0 
-L 525 0 
+       <path id="Arimo-45" d="M 525 0 
 L 525 4403 
 L 3866 4403 
 L 3866 3916 
@@ -7502,9 +7513,11 @@ L 3678 2022
 L 1122 2022 
 L 1122 488 
 L 3994 488 
+L 3994 0 
+L 525 0 
 z
 " transform="scale(0.015625)"/>
-       <path id="Arimo-Regular-6f" d="M 3291 1694 
+       <path id="Arimo-6f" d="M 3291 1694 
 Q 3291 806 2900 371 
 Q 2509 -63 1766 -63 
 Q 1025 -63 647 389 
@@ -7525,11 +7538,11 @@ Q 2700 1003 2700 1694
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#Arimo-Regular-45"/>
-      <use xlink:href="#Arimo-Regular-70" x="66.699219"/>
-      <use xlink:href="#Arimo-Regular-6f" x="122.314453"/>
-      <use xlink:href="#Arimo-Regular-63" x="177.929688"/>
-      <use xlink:href="#Arimo-Regular-68" x="227.929688"/>
+      <use xlink:href="#Arimo-45"/>
+      <use xlink:href="#Arimo-70" x="66.699219"/>
+      <use xlink:href="#Arimo-6f" x="122.314453"/>
+      <use xlink:href="#Arimo-63" x="177.929688"/>
+      <use xlink:href="#Arimo-68" x="227.929688"/>
      </g>
     </g>
    </g>
@@ -7538,13 +7551,13 @@ z
      <g id="line2d_23">
       <path d="M 328.791228 168.912331 
 L 562.693875 168.912331 
-" clip-path="url(#p062728c54f)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
+" clip-path="url(#pb4afb611ff)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_24">
       <!-- 50 -->
       <g style="fill: #262626" transform="translate(310.703978 172.100956) scale(0.088 -0.088)">
        <defs>
-        <path id="Arimo-Regular-35" d="M 3291 1434 
+        <path id="Arimo-35" d="M 3291 1434 
 Q 3291 738 2877 337 
 Q 2463 -63 1728 -63 
 Q 1113 -63 734 206 
@@ -7564,14 +7577,13 @@ L 3034 3925
 L 1044 3925 
 L 959 2528 
 Q 1325 2809 1869 2809 
-Q 2303 2809 2622 2636 
-Q 2941 2463 3116 2153 
-Q 3291 1844 3291 1434 
+Q 2519 2809 2905 2428 
+Q 3291 2047 3291 1434 
 z
 " transform="scale(0.015625)"/>
        </defs>
-       <use xlink:href="#Arimo-Regular-35"/>
-       <use xlink:href="#Arimo-Regular-30" x="55.615234"/>
+       <use xlink:href="#Arimo-35"/>
+       <use xlink:href="#Arimo-30" x="55.615234"/>
       </g>
      </g>
     </g>
@@ -7579,13 +7591,13 @@ z
      <g id="line2d_24">
       <path d="M 328.791228 140.331094 
 L 562.693875 140.331094 
-" clip-path="url(#p062728c54f)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
+" clip-path="url(#pb4afb611ff)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_25">
       <!-- 60 -->
       <g style="fill: #262626" transform="translate(310.703978 143.519719) scale(0.088 -0.088)">
-       <use xlink:href="#Arimo-Regular-36"/>
-       <use xlink:href="#Arimo-Regular-30" x="55.615234"/>
+       <use xlink:href="#Arimo-36"/>
+       <use xlink:href="#Arimo-30" x="55.615234"/>
       </g>
      </g>
     </g>
@@ -7593,21 +7605,19 @@ L 562.693875 140.331094
      <g id="line2d_25">
       <path d="M 328.791228 111.749858 
 L 562.693875 111.749858 
-" clip-path="url(#p062728c54f)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
+" clip-path="url(#pb4afb611ff)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_26">
       <!-- 70 -->
       <g style="fill: #262626" transform="translate(310.703978 114.938483) scale(0.088 -0.088)">
        <defs>
-        <path id="Arimo-Regular-37" d="M 3238 3947 
-Q 2900 3431 2661 3028 
-Q 2422 2625 2284 2331 
+        <path id="Arimo-37" d="M 3238 3947 
+Q 2563 2916 2284 2331 
 Q 2006 1747 1867 1178 
 Q 1728 609 1728 0 
 L 1141 0 
-Q 1141 438 1231 889 
-Q 1322 1341 1522 1838 
-Q 1897 2766 2694 3925 
+Q 1141 844 1498 1776 
+Q 1856 2709 2694 3925 
 L 328 3925 
 L 328 4403 
 L 3238 4403 
@@ -7615,8 +7625,8 @@ L 3238 3947
 z
 " transform="scale(0.015625)"/>
        </defs>
-       <use xlink:href="#Arimo-Regular-37"/>
-       <use xlink:href="#Arimo-Regular-30" x="55.615234"/>
+       <use xlink:href="#Arimo-37"/>
+       <use xlink:href="#Arimo-30" x="55.615234"/>
       </g>
      </g>
     </g>
@@ -7624,13 +7634,13 @@ z
      <g id="line2d_26">
       <path d="M 328.791228 83.168622 
 L 562.693875 83.168622 
-" clip-path="url(#p062728c54f)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
+" clip-path="url(#pb4afb611ff)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_27">
       <!-- 80 -->
       <g style="fill: #262626" transform="translate(310.703978 86.357247) scale(0.088 -0.088)">
-       <use xlink:href="#Arimo-Regular-38"/>
-       <use xlink:href="#Arimo-Regular-30" x="55.615234"/>
+       <use xlink:href="#Arimo-38"/>
+       <use xlink:href="#Arimo-30" x="55.615234"/>
       </g>
      </g>
     </g>
@@ -7638,13 +7648,13 @@ L 562.693875 83.168622
      <g id="line2d_27">
       <path d="M 328.791228 54.587386 
 L 562.693875 54.587386 
-" clip-path="url(#p062728c54f)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
+" clip-path="url(#pb4afb611ff)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_28">
       <!-- 90 -->
       <g style="fill: #262626" transform="translate(310.703978 57.776011) scale(0.088 -0.088)">
-       <use xlink:href="#Arimo-Regular-39"/>
-       <use xlink:href="#Arimo-Regular-30" x="55.615234"/>
+       <use xlink:href="#Arimo-39"/>
+       <use xlink:href="#Arimo-30" x="55.615234"/>
       </g>
      </g>
     </g>
@@ -7652,32 +7662,32 @@ L 562.693875 54.587386
      <g id="line2d_28">
       <path d="M 328.791228 26.00615 
 L 562.693875 26.00615 
-" clip-path="url(#p062728c54f)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
+" clip-path="url(#pb4afb611ff)" style="fill: none; stroke: #cccccc; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="text_29">
       <!-- 100 -->
       <g style="fill: #262626" transform="translate(305.810353 29.194775) scale(0.088 -0.088)">
-       <use xlink:href="#Arimo-Regular-31"/>
-       <use xlink:href="#Arimo-Regular-30" x="55.615234"/>
-       <use xlink:href="#Arimo-Regular-30" x="111.230469"/>
+       <use xlink:href="#Arimo-31"/>
+       <use xlink:href="#Arimo-30" x="55.615234"/>
+       <use xlink:href="#Arimo-30" x="111.230469"/>
       </g>
      </g>
     </g>
     <g id="text_30">
      <!-- Accuracy (%) -->
      <g style="fill: #262626" transform="translate(299.818353 125.29575) rotate(-90) scale(0.096 -0.096)">
-      <use xlink:href="#Arimo-Regular-41"/>
-      <use xlink:href="#Arimo-Regular-63" x="66.699219"/>
-      <use xlink:href="#Arimo-Regular-63" x="116.699219"/>
-      <use xlink:href="#Arimo-Regular-75" x="166.699219"/>
-      <use xlink:href="#Arimo-Regular-72" x="222.314453"/>
-      <use xlink:href="#Arimo-Regular-61" x="255.615234"/>
-      <use xlink:href="#Arimo-Regular-63" x="311.230469"/>
-      <use xlink:href="#Arimo-Regular-79" x="361.230469"/>
-      <use xlink:href="#Arimo-Regular-20" x="411.230469"/>
-      <use xlink:href="#Arimo-Regular-28" x="439.013672"/>
-      <use xlink:href="#Arimo-Regular-25" x="472.314453"/>
-      <use xlink:href="#Arimo-Regular-29" x="561.230469"/>
+      <use xlink:href="#Arimo-41"/>
+      <use xlink:href="#Arimo-63" x="66.699219"/>
+      <use xlink:href="#Arimo-63" x="116.699219"/>
+      <use xlink:href="#Arimo-75" x="166.699219"/>
+      <use xlink:href="#Arimo-72" x="222.314453"/>
+      <use xlink:href="#Arimo-61" x="255.615234"/>
+      <use xlink:href="#Arimo-63" x="311.230469"/>
+      <use xlink:href="#Arimo-79" x="361.230469"/>
+      <use xlink:href="#Arimo-20" x="411.230469"/>
+      <use xlink:href="#Arimo-28" x="439.013672"/>
+      <use xlink:href="#Arimo-25" x="472.314453"/>
+      <use xlink:href="#Arimo-29" x="561.230469"/>
      </g>
     </g>
    </g>
@@ -7766,7 +7776,7 @@ L 543.987047 27.263724
 L 546.678677 27.206562 
 L 549.370307 27.149399 
 L 552.061937 27.206562 
-" clip-path="url(#p062728c54f)" style="fill: none; stroke: #4c72b0; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pb4afb611ff)" style="fill: none; stroke: #4c72b0; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="line2d_30">
     <path d="M 339.423167 166.397182 
@@ -7849,7 +7859,7 @@ L 543.987047 38.067432
 L 546.678677 37.953107 
 L 549.370307 38.067432 
 L 552.061937 37.924525 
-" clip-path="url(#p062728c54f)" style="fill: none; stroke: #dd8452; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pb4afb611ff)" style="fill: none; stroke: #dd8452; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="line2d_31">
     <path d="M 339.423167 41.668667 
@@ -7932,7 +7942,7 @@ L 543.987047 28.464136
 L 546.678677 30.121848 
 L 549.370307 28.521299 
 L 552.061937 29.607386 
-" clip-path="url(#p062728c54f)" style="fill: none; stroke: #55a868; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pb4afb611ff)" style="fill: none; stroke: #55a868; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="line2d_32">
     <path d="M 339.423167 112.664458 
@@ -8015,7 +8025,7 @@ L 543.987047 38.7248
 L 546.678677 43.726516 
 L 549.370307 39.239262 
 L 552.061937 43.640773 
-" clip-path="url(#p062728c54f)" style="fill: none; stroke: #c44e52; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pb4afb611ff)" style="fill: none; stroke: #c44e52; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="line2d_33"/>
    <g id="line2d_34"/>
@@ -8044,10 +8054,10 @@ L 562.693875 20.157
    <g id="text_31">
     <!-- test -->
     <g style="fill: #262626" transform="translate(438.006302 14.157) scale(0.096 -0.096)">
-     <use xlink:href="#Arimo-Regular-74"/>
-     <use xlink:href="#Arimo-Regular-65" x="27.783203"/>
-     <use xlink:href="#Arimo-Regular-73" x="83.398438"/>
-     <use xlink:href="#Arimo-Regular-74" x="133.398438"/>
+     <use xlink:href="#Arimo-74"/>
+     <use xlink:href="#Arimo-65" x="27.783203"/>
+     <use xlink:href="#Arimo-73" x="83.398438"/>
+     <use xlink:href="#Arimo-74" x="133.398438"/>
     </g>
    </g>
    <g id="legend_2">
@@ -8067,12 +8077,12 @@ z
     <g id="text_32">
      <!-- metric -->
      <g style="fill: #262626" transform="translate(489.038062 113.036) scale(0.096 -0.096)">
-      <use xlink:href="#Arimo-Regular-6d"/>
-      <use xlink:href="#Arimo-Regular-65" x="83.300781"/>
-      <use xlink:href="#Arimo-Regular-74" x="138.916016"/>
-      <use xlink:href="#Arimo-Regular-72" x="166.699219"/>
-      <use xlink:href="#Arimo-Regular-69" x="200"/>
-      <use xlink:href="#Arimo-Regular-63" x="222.216797"/>
+      <use xlink:href="#Arimo-6d"/>
+      <use xlink:href="#Arimo-65" x="83.300781"/>
+      <use xlink:href="#Arimo-74" x="138.916016"/>
+      <use xlink:href="#Arimo-72" x="166.699219"/>
+      <use xlink:href="#Arimo-69" x="200"/>
+      <use xlink:href="#Arimo-63" x="222.216797"/>
      </g>
     </g>
     <g id="line2d_37">
@@ -8085,11 +8095,7 @@ L 467.03375 122.72525
      <!-- per-char (generated) -->
      <g style="fill: #262626" transform="translate(474.07375 125.80525) scale(0.088 -0.088)">
       <defs>
-       <path id="Arimo-Regular-64" d="M 2609 0 
-Q 2603 34 2595 129 
-Q 2588 225 2583 340 
-Q 2578 456 2578 544 
-L 2566 544 
+       <path id="Arimo-64" d="M 2566 544 
 Q 2409 219 2151 78 
 Q 1894 -63 1513 -63 
 Q 872 -63 570 368 
@@ -8104,6 +8110,9 @@ L 3128 4638
 L 3128 697 
 Q 3128 169 3147 0 
 L 2609 0 
+Q 2600 50 2589 231 
+Q 2578 413 2578 544 
+L 2566 544 
 z
 M 859 1694 
 Q 859 984 1046 678 
@@ -8117,26 +8126,26 @@ Q 859 2400 859 1694
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#Arimo-Regular-70"/>
-      <use xlink:href="#Arimo-Regular-65" x="55.615234"/>
-      <use xlink:href="#Arimo-Regular-72" x="111.230469"/>
-      <use xlink:href="#Arimo-Regular-2d" x="144.53125"/>
-      <use xlink:href="#Arimo-Regular-63" x="177.832031"/>
-      <use xlink:href="#Arimo-Regular-68" x="227.832031"/>
-      <use xlink:href="#Arimo-Regular-61" x="283.447266"/>
-      <use xlink:href="#Arimo-Regular-72" x="339.0625"/>
-      <use xlink:href="#Arimo-Regular-20" x="372.363281"/>
-      <use xlink:href="#Arimo-Regular-28" x="400.146484"/>
-      <use xlink:href="#Arimo-Regular-67" x="433.447266"/>
-      <use xlink:href="#Arimo-Regular-65" x="489.0625"/>
-      <use xlink:href="#Arimo-Regular-6e" x="544.677734"/>
-      <use xlink:href="#Arimo-Regular-65" x="600.292969"/>
-      <use xlink:href="#Arimo-Regular-72" x="655.908203"/>
-      <use xlink:href="#Arimo-Regular-61" x="689.208984"/>
-      <use xlink:href="#Arimo-Regular-74" x="744.824219"/>
-      <use xlink:href="#Arimo-Regular-65" x="772.607422"/>
-      <use xlink:href="#Arimo-Regular-64" x="828.222656"/>
-      <use xlink:href="#Arimo-Regular-29" x="883.837891"/>
+      <use xlink:href="#Arimo-70"/>
+      <use xlink:href="#Arimo-65" x="55.615234"/>
+      <use xlink:href="#Arimo-72" x="111.230469"/>
+      <use xlink:href="#Arimo-2d" x="144.53125"/>
+      <use xlink:href="#Arimo-63" x="177.832031"/>
+      <use xlink:href="#Arimo-68" x="227.832031"/>
+      <use xlink:href="#Arimo-61" x="283.447266"/>
+      <use xlink:href="#Arimo-72" x="339.0625"/>
+      <use xlink:href="#Arimo-20" x="372.363281"/>
+      <use xlink:href="#Arimo-28" x="400.146484"/>
+      <use xlink:href="#Arimo-67" x="433.447266"/>
+      <use xlink:href="#Arimo-65" x="489.0625"/>
+      <use xlink:href="#Arimo-6e" x="544.677734"/>
+      <use xlink:href="#Arimo-65" x="600.292969"/>
+      <use xlink:href="#Arimo-72" x="655.908203"/>
+      <use xlink:href="#Arimo-61" x="689.208984"/>
+      <use xlink:href="#Arimo-74" x="744.824219"/>
+      <use xlink:href="#Arimo-65" x="772.607422"/>
+      <use xlink:href="#Arimo-64" x="828.222656"/>
+      <use xlink:href="#Arimo-29" x="883.837891"/>
      </g>
     </g>
     <g id="line2d_38">
@@ -8148,24 +8157,24 @@ L 467.03375 135.3285
     <g id="text_34">
      <!-- parser (generated) -->
      <g style="fill: #262626" transform="translate(474.07375 138.4085) scale(0.088 -0.088)">
-      <use xlink:href="#Arimo-Regular-70"/>
-      <use xlink:href="#Arimo-Regular-61" x="55.615234"/>
-      <use xlink:href="#Arimo-Regular-72" x="111.230469"/>
-      <use xlink:href="#Arimo-Regular-73" x="144.53125"/>
-      <use xlink:href="#Arimo-Regular-65" x="194.53125"/>
-      <use xlink:href="#Arimo-Regular-72" x="250.146484"/>
-      <use xlink:href="#Arimo-Regular-20" x="283.447266"/>
-      <use xlink:href="#Arimo-Regular-28" x="311.230469"/>
-      <use xlink:href="#Arimo-Regular-67" x="344.53125"/>
-      <use xlink:href="#Arimo-Regular-65" x="400.146484"/>
-      <use xlink:href="#Arimo-Regular-6e" x="455.761719"/>
-      <use xlink:href="#Arimo-Regular-65" x="511.376953"/>
-      <use xlink:href="#Arimo-Regular-72" x="566.992188"/>
-      <use xlink:href="#Arimo-Regular-61" x="600.292969"/>
-      <use xlink:href="#Arimo-Regular-74" x="655.908203"/>
-      <use xlink:href="#Arimo-Regular-65" x="683.691406"/>
-      <use xlink:href="#Arimo-Regular-64" x="739.306641"/>
-      <use xlink:href="#Arimo-Regular-29" x="794.921875"/>
+      <use xlink:href="#Arimo-70"/>
+      <use xlink:href="#Arimo-61" x="55.615234"/>
+      <use xlink:href="#Arimo-72" x="111.230469"/>
+      <use xlink:href="#Arimo-73" x="144.53125"/>
+      <use xlink:href="#Arimo-65" x="194.53125"/>
+      <use xlink:href="#Arimo-72" x="250.146484"/>
+      <use xlink:href="#Arimo-20" x="283.447266"/>
+      <use xlink:href="#Arimo-28" x="311.230469"/>
+      <use xlink:href="#Arimo-67" x="344.53125"/>
+      <use xlink:href="#Arimo-65" x="400.146484"/>
+      <use xlink:href="#Arimo-6e" x="455.761719"/>
+      <use xlink:href="#Arimo-65" x="511.376953"/>
+      <use xlink:href="#Arimo-72" x="566.992188"/>
+      <use xlink:href="#Arimo-61" x="600.292969"/>
+      <use xlink:href="#Arimo-74" x="655.908203"/>
+      <use xlink:href="#Arimo-65" x="683.691406"/>
+      <use xlink:href="#Arimo-64" x="739.306641"/>
+      <use xlink:href="#Arimo-29" x="794.921875"/>
      </g>
     </g>
     <g id="line2d_39">
@@ -8178,29 +8187,29 @@ L 467.03375 147.93175
      <!-- per-char (real) -->
      <g style="fill: #262626" transform="translate(474.07375 151.01175) scale(0.088 -0.088)">
       <defs>
-       <path id="Arimo-Regular-6c" d="M 994 4638 
-L 994 0 
-L 431 0 
+       <path id="Arimo-6c" d="M 431 0 
 L 431 4638 
 L 994 4638 
+L 994 0 
+L 431 0 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#Arimo-Regular-70"/>
-      <use xlink:href="#Arimo-Regular-65" x="55.615234"/>
-      <use xlink:href="#Arimo-Regular-72" x="111.230469"/>
-      <use xlink:href="#Arimo-Regular-2d" x="144.53125"/>
-      <use xlink:href="#Arimo-Regular-63" x="177.832031"/>
-      <use xlink:href="#Arimo-Regular-68" x="227.832031"/>
-      <use xlink:href="#Arimo-Regular-61" x="283.447266"/>
-      <use xlink:href="#Arimo-Regular-72" x="339.0625"/>
-      <use xlink:href="#Arimo-Regular-20" x="372.363281"/>
-      <use xlink:href="#Arimo-Regular-28" x="400.146484"/>
-      <use xlink:href="#Arimo-Regular-72" x="433.447266"/>
-      <use xlink:href="#Arimo-Regular-65" x="466.748047"/>
-      <use xlink:href="#Arimo-Regular-61" x="522.363281"/>
-      <use xlink:href="#Arimo-Regular-6c" x="577.978516"/>
-      <use xlink:href="#Arimo-Regular-29" x="600.195312"/>
+      <use xlink:href="#Arimo-70"/>
+      <use xlink:href="#Arimo-65" x="55.615234"/>
+      <use xlink:href="#Arimo-72" x="111.230469"/>
+      <use xlink:href="#Arimo-2d" x="144.53125"/>
+      <use xlink:href="#Arimo-63" x="177.832031"/>
+      <use xlink:href="#Arimo-68" x="227.832031"/>
+      <use xlink:href="#Arimo-61" x="283.447266"/>
+      <use xlink:href="#Arimo-72" x="339.0625"/>
+      <use xlink:href="#Arimo-20" x="372.363281"/>
+      <use xlink:href="#Arimo-28" x="400.146484"/>
+      <use xlink:href="#Arimo-72" x="433.447266"/>
+      <use xlink:href="#Arimo-65" x="466.748047"/>
+      <use xlink:href="#Arimo-61" x="522.363281"/>
+      <use xlink:href="#Arimo-6c" x="577.978516"/>
+      <use xlink:href="#Arimo-29" x="600.195312"/>
      </g>
     </g>
     <g id="line2d_40">
@@ -8212,29 +8221,29 @@ L 467.03375 160.535
     <g id="text_36">
      <!-- parser (real) -->
      <g style="fill: #262626" transform="translate(474.07375 163.615) scale(0.088 -0.088)">
-      <use xlink:href="#Arimo-Regular-70"/>
-      <use xlink:href="#Arimo-Regular-61" x="55.615234"/>
-      <use xlink:href="#Arimo-Regular-72" x="111.230469"/>
-      <use xlink:href="#Arimo-Regular-73" x="144.53125"/>
-      <use xlink:href="#Arimo-Regular-65" x="194.53125"/>
-      <use xlink:href="#Arimo-Regular-72" x="250.146484"/>
-      <use xlink:href="#Arimo-Regular-20" x="283.447266"/>
-      <use xlink:href="#Arimo-Regular-28" x="311.230469"/>
-      <use xlink:href="#Arimo-Regular-72" x="344.53125"/>
-      <use xlink:href="#Arimo-Regular-65" x="377.832031"/>
-      <use xlink:href="#Arimo-Regular-61" x="433.447266"/>
-      <use xlink:href="#Arimo-Regular-6c" x="489.0625"/>
-      <use xlink:href="#Arimo-Regular-29" x="511.279297"/>
+      <use xlink:href="#Arimo-70"/>
+      <use xlink:href="#Arimo-61" x="55.615234"/>
+      <use xlink:href="#Arimo-72" x="111.230469"/>
+      <use xlink:href="#Arimo-73" x="144.53125"/>
+      <use xlink:href="#Arimo-65" x="194.53125"/>
+      <use xlink:href="#Arimo-72" x="250.146484"/>
+      <use xlink:href="#Arimo-20" x="283.447266"/>
+      <use xlink:href="#Arimo-28" x="311.230469"/>
+      <use xlink:href="#Arimo-72" x="344.53125"/>
+      <use xlink:href="#Arimo-65" x="377.832031"/>
+      <use xlink:href="#Arimo-61" x="433.447266"/>
+      <use xlink:href="#Arimo-6c" x="489.0625"/>
+      <use xlink:href="#Arimo-29" x="511.279297"/>
      </g>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p4910e04c2a">
+  <clipPath id="p48b172f378">
    <rect x="43.129875" y="20.157" width="233.902647" height="153.204"/>
   </clipPath>
-  <clipPath id="p062728c54f">
+  <clipPath id="pb4afb611ff">
    <rect x="328.791228" y="20.157" width="233.902647" height="153.204"/>
   </clipPath>
  </defs>

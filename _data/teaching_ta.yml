@@ -1,7 +1,12 @@
 - location : "Simon Fraser University"
+  period : "Spring 2025"
+  courses : "Vector calculus (MATH252), algebra workshop"
+  now : true
+
+- location : "Simon Fraser University"
   period : "Fall 2024"
   courses : "Continuous optimization (MATH309), calculus workshop"
-  now : true
+  now : false
 
 - location : "Simon Fraser University"
   period : "Summer 2024"
@@ -34,6 +39,11 @@
   now : false
 
 - location : "Simon Fraser University"
-  period : "Fall 2018, Spring 2018"
+  period : "Fall 2018"
+  courses : "Applied calculus workshop"
+  now : false
+
+- location : "Simon Fraser University"
+  period : "Spring 2018"
   courses : "Applied calculus workshop"
   now : false

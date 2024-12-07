@@ -8,8 +8,10 @@
 
 - title : "Restarts subject to approximate sharpness: a parameter-free and optimal scheme for first-order methods"
   authors : "B. Adcock, M. Colbrook & M. Neyra-Nesterenko"
-  type : "submitted"
-  date : "2023"
+  type : "journal paper"
+  date : "2024"
+  citation : "Found. Comput. Math. <b>In press.</b>"
+  link: "#"
   preprint : "https://arxiv.org/abs/2301.02268"
 
 - title : "NESTANets: stable, accurate and efficient neural networks for analysis-sparse inverse problems"

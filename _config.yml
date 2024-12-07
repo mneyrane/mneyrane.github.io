@@ -22,4 +22,4 @@ defaults:
         scope:
             path: "_projects"
         values:
-            layout: "blog"
+            layout: "mainpage"

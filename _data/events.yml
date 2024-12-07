@@ -1,5 +1,15 @@
-- name : "West Coast Optimization Meeting (WCOM) Autumn"
+- name : "NeurIPS conference"
   type : "upcoming"
+  loc : "Vancouver Convention Center, Vancouver, BC, CA"
+  date : "Dec 10-15, 2024"
+
+- name : "CMS Winter Meeting"
+  type : "past"
+  loc  : "Kwantlen Polytechnic University, Richmond Campus, Richmond, BC, CA"
+  date : "Nov 29-Dec 2, 2024"
+
+- name : "West Coast Optimization Meeting (WCOM) Autumn"
+  type : "past"
   loc : "University of British Columbia, Vancouver, BC, CA"
   date : "Sep 20-21, 2024"
 
@@ -38,7 +48,7 @@
   link : "https://www.univie.ac.at/projektservice-mathematik/e/index.php?event=ICCHA2021online"
   date : "Sep 13-17, 2021"
 
-- name : "PIMS Math<sup>Industry</sup> workshop"
+- name : "PIMS Math To Power Industry workshop"
   type : "past"
   loc : "virtual"
   link : "https://m2pi.ca/2021/"

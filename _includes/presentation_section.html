@@ -1,5 +1,5 @@
 {% if include.scheduled == true %}
-<h5 class="fw-bold text-info">{{ include.title }}</h5>
+<h5 class="fw-bold text-primary">{{ include.title }}</h5>
 {% else %}
 <h5 class="fw-bold">{{ include.title }}</h5>
 {% endif %}
@@ -10,7 +10,7 @@
   <li>
     <p>
       <em>{{ talk.title }}</em><br>
-      {{ talk.event }} <a href="{{ talk.link }}">[link]</a> - {{ talk.type }} <span class="text-secondary">({{ talk.loc }} - {{ talk.date }})</span>
+      {{ talk.event }} <a href="{{ talk.link }}">[link]</a>{% if talk.slides %}{% capture slides_link %}../assets/media/slides/{{ talk.slides }}{% endcapture %} <a href="{{ slides_link }}">[slides]</a>{% endif %} - {{ talk.type }} ({{ talk.loc }} - <span class="text-info">{{ talk.date }}</span>)`
     </p>
   </li>
   {% endif %}

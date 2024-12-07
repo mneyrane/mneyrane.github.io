@@ -4,7 +4,7 @@
   {% for item in site.data.referee %}
   <li>
     <p>
-    {{ item.event }} <a href="{{ item.link }}">[link]</a> <span class="text-secondary">({{ item.date }})</span>
+    {{ item.event }} <a href="{{ item.link }}">[link]</a> (<span class="text-info">{{ item.date }}</span>)
    </p>
   </li>
   {% endfor %}

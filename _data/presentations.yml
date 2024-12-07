@@ -4,7 +4,7 @@
   type : "contributed talk"
   date : "Sep 21, 2024"
   link : "https://personal.math.ubc.ca/~loew/wcom/schedule.php"
-  scheduled : true
+  slides : "WCOM_Autumn_2024_conference.pdf"
 
 - title: "Unrolled NESTA: constructing stable, accurate and efficient neural networks for gradient-sparse imaging problems"
   event : "Math Grad Social"

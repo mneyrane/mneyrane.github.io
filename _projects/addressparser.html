@@ -21,7 +21,7 @@ Unfortunately, building a parser with extensive address coverage is a delicate m
 For example, there can be:
 </p>
 
-<ul>
+<ul class="font-serif">
   <li>equivalent address formats <span class="text-muted">("101-500 Broadway" and "500 Broadway Unit 101")</span></li>
   <li>language quirks like abbreviations <span class="text-muted">("Street" to "St")</span> and ordinal indicators <span class="text-muted">("1", "1st", "First")</span></li>
   <li><a href="https://www.mjt.me.uk/posts/falsehoods-programmers-believe-about-addresses">edge cases</a> not covered by common assumptions about addresses</li>
@@ -90,7 +90,7 @@ Moreover, considering Canada is bilingual in English and French, for simplicity 
 Considering token categories for civic address data vary by municipality in Canada, we choose the categories somewhat arbitrarily.
 They are listed below, with the first being a dummy category to classify spaces in the text input.
 
-<ol start="0">
+<ol class="font-serif" start="0">
   <li><code>SEPARATOR</code> : space character</li>
   <li><code>UNIT</code> : unit number </li>
   <li><code>HOUSE_NUM</code> : house number</li>
@@ -218,7 +218,7 @@ CCAPNet achieves 95% parser accuracy on both generated and real test data at the
 For this final section, we use the 76th epoch CCAPNet, which has 95% parser accuracy on both test datasets.
 Confusion matrices for the model are computed for the test data and visualized in Figure 4.
 Although the model predominantly makes correct predictions, the matrices suggest that it occasionally misclassifies:
-<ul>
+<ul class="font-serif">
   <li>words that neighbour each other in the address</li>
   <li>tokens that produce similar text, such as unit numbers, house numbers and directions, or street names, street types and cities</li>
 </ul>
@@ -254,13 +254,15 @@ This may be influenced by many street names occurring as one word in the trainin
 <p>
 As a final remark, further improvements to the mockup can be done.
 Some examples include:
+</p>
 
-<ul>
+<ul class="font-serif">
   <li>training a larger model with a larger dataset</li>
   <li>extending address generation with more data, e.g. more address templates and token examples</li>
   <li>preprocess input with address normalization, e.g. word expansions and abbreviations</li>
   <li>text segmentation model to avoid discontinuous character classifications</li>
 </ul>
 
+<p>
 Nonetheless, this mockup implementation hopefully served as a proof of concept that makes a case for data-driven address parsers!
 </p>
