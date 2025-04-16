@@ -1,6 +1,14 @@
+- name : "Graduate Travel and Research Award"
+  held : "Jan-Apr 2025"
+  value : "$490"
+  from : "Simon Fraser University"
+  by : "application"
+  during : "PhD"
+  link : ~
+
 - name : "PhD Research Scholarship"
   held : "May 2024-Apr 2025"
-  value : "$5,400"
+  value : "$6,000"
   from : "Simon Fraser University"
   by : "nomination"
   during : "PhD"
